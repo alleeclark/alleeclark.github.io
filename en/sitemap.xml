@@ -3,53 +3,64 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://alleeclark.github.io/about/</loc>
+    <loc>https://allee.xyz/posts/2019/03/what-decision-should-i-make-about-an-incident/</loc>
+    <lastmod>2019-03-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://allee.xyz/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://alleeclark.github.io/</loc>
+    <loc>https://allee.xyz/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://alleeclark.github.io/fr/"
+                href="https://allee.xyz/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://alleeclark.github.io/"
+                href="https://allee.xyz/"
                 />
   </url>
   
   <url>
-    <loc>https://alleeclark.github.io/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+    <loc>https://allee.xyz/</loc>
+    <lastmod>2019-03-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://alleeclark.github.io/fr/"
+                href="https://allee.xyz/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://alleeclark.github.io/"
+                href="https://allee.xyz/"
                 />
   </url>
   
   <url>
-    <loc>https://alleeclark.github.io/tags/</loc>
+    <loc>https://allee.xyz/posts/</loc>
+    <lastmod>2019-03-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://allee.xyz/tags/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://alleeclark.github.io/fr/tags/"
+                href="https://allee.xyz/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://alleeclark.github.io/tags/"
+                href="https://allee.xyz/tags/"
                 />
   </url>
   
