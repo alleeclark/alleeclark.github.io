@@ -3,47 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.alleeclark.github.io/fr/</loc>
+    <loc>https://alleeclark.github.io/fr/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.alleeclark.github.io/"
+                href="https://alleeclark.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://www.alleeclark.github.io/fr/"
+                href="https://alleeclark.github.io/fr/"
                 />
   </url>
   
   <url>
-    <loc>https://www.alleeclark.github.io/fr/</loc>
+    <loc>https://alleeclark.github.io/fr/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.alleeclark.github.io/"
+                href="https://alleeclark.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://www.alleeclark.github.io/fr/"
+                href="https://alleeclark.github.io/fr/"
                 />
   </url>
   
   <url>
-    <loc>https://www.alleeclark.github.io/fr/tags/</loc>
+    <loc>https://alleeclark.github.io/fr/tags/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.alleeclark.github.io/tags/"
+                href="https://alleeclark.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://www.alleeclark.github.io/fr/tags/"
+                href="https://alleeclark.github.io/fr/tags/"
                 />
   </url>
   
