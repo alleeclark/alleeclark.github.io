@@ -16,7 +16,16 @@
       <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://alleeclark.github.io/posts/2019/03/what-decision-should-i-make-about-an-incident/</guid>
-      <description>Introduction This is mainly written from a production engineer’s view. This might be helpful for an engineer who is response for some production service, and just wants a sanity check&amp;hellip; On with the question. Sometimes you have legacy software that most of your company’s critical path relies on. That software hasn&amp;rsquo;t powered off in X amount of scary years. Some combination of documentation, automation of task and source control code is nonexistent.</description>
+      <description>This is mainly written from a production engineer’s view. This might be helpful for an engineer who is response for some production service, and just wants a sanity check&amp;hellip; On with the question. Sometimes you have legacy software that most of your company’s critical path relies on. That software hasn&amp;rsquo;t powered off in X amount of scary years. Some combination of documentation, automation of task and source control code is nonexistent.</description>
+    </item>
+    
+    <item>
+      <title>Antipatterns with SRE</title>
+      <link>https://alleeclark.github.io/posts/2019/03/antipatterns-with-sre/</link>
+      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://alleeclark.github.io/posts/2019/03/antipatterns-with-sre/</guid>
+      <description>Today I was updating an ansible playbook that needed to perform some system level cleanups on a periodic basis. In the past my team used straight up crons. Sometimes we’ve used monit to perform checks on these crons for restart. Mainly we were on centos 6 host. Now we are on Centos 7 and have the ability to use systemD. Systemd has a time configuration that you may use to run crons.</description>
     </item>
     
     <item>
