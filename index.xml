@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
+    <title>nothing too fancy here</title>
     <link>https://alleeclark.github.io/</link>
-    <description>Recent content on </description>
+    <description>Recent content on nothing too fancy here</description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 28 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://alleeclark.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What decision should I make about an incident?</title>
+      <link>https://alleeclark.github.io/posts/2019/03/what-decision-should-i-make-about-an-incident/</link>
+      <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://alleeclark.github.io/posts/2019/03/what-decision-should-i-make-about-an-incident/</guid>
+      <description>Introduction This is mainly written from a production engineer’s view. This might be helpful for an engineer who is response for some production service, and just wants a sanity check&amp;hellip; On with the question. Sometimes you have legacy software that most of your company’s critical path relies on. That software hasn&amp;rsquo;t powered off in X amount of scary years. Some combination of documentation, automation of task and source control code is nonexistent.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://alleeclark.github.io/about/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://alleeclark.github.io/about/</guid>
+      <description>I am Allee. Currently an SRE at Oscar Health. Before this I was working on and with data science teams at Dell. Built and supported highly avaiable search clusters for machine learning logs. I am a product of an HBCU. Being culuturally reposible is very important to me. I love cooking. I treat cookbooks like textbooks and hope to publish some day.
+I&amp;rsquo;ll likely ramble about a few things here or there.</description>
+    </item>
     
   </channel>
 </rss>
