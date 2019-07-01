@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://alleeclark.github.io/fr/index.html</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://alleeclark.github.io/index.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://alleeclark.github.io/fr/index.html"
+                />
+  </url>
+  
+  <url>
     <loc>https://alleeclark.github.io/fr/</loc>
     <priority>0</priority>
     <xhtml:link
@@ -29,21 +44,6 @@
                 rel="alternate"
                 hreflang="fr"
                 href="https://alleeclark.github.io/fr/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://alleeclark.github.io/fr/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://alleeclark.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://alleeclark.github.io/fr/"
                 />
   </url>
   

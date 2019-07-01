@@ -13,12 +13,14 @@
   </url>
   
   <url>
-    <loc>https://alleeclark.github.io/about/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+    <loc>https://alleeclark.github.io/posts/</loc>
+    <lastmod>2019-03-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://alleeclark.github.io/</loc>
+    <lastmod>2019-03-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -33,9 +35,23 @@
   </url>
   
   <url>
-    <loc>https://alleeclark.github.io/posts/</loc>
-    <lastmod>2019-03-28T00:00:00+00:00</lastmod>
+    <loc>https://alleeclark.github.io/about/</loc>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/index.html</loc>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://alleeclark.github.io/fr/index.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://alleeclark.github.io/index.html"
+                />
   </url>
   
   <url>
@@ -50,22 +66,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://alleeclark.github.io/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://alleeclark.github.io/</loc>
-    <lastmod>2019-03-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://alleeclark.github.io/fr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://alleeclark.github.io/"
                 />
   </url>
   
