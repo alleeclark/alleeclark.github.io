@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Posts on //allee</title>
-		<link>https://alleeclark.github,io/posts/</link>
+		<link>https://alleeclark.github.io/posts/</link>
 		<description>Recent content in Posts on //allee</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
 		<lastBuildDate>Thu, 28 Mar 2019 00:00:00 +0000</lastBuildDate>
-		<atom:link href="https://alleeclark.github,io/posts/index.xml" rel="self" type="application/rss+xml" />
+		<atom:link href="https://alleeclark.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
 		
 		<item>
 			<title>What decision should I make about an incident?</title>
-			<link>https://alleeclark.github,io/posts/what-should-i-do/</link>
+			<link>https://alleeclark.github.io/posts/what-should-i-do/</link>
 			<pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
 			
-			<guid>https://alleeclark.github,io/posts/what-should-i-do/</guid>
+			<guid>https://alleeclark.github.io/posts/what-should-i-do/</guid>
 			<description>This is mainly written from a production engineer’s view. This might be helpful for an engineer who is response for some production service, and just wants a sanity check&amp;hellip; On with the question. Sometimes you have legacy software that most of your company’s critical path relies on. That software hasn&amp;rsquo;t powered off in X amount of scary years. Some combination of documentation, automation of task and source control code is nonexistent.</description>
 			<content type="html"><![CDATA[
 
@@ -28,10 +28,10 @@
 		
 		<item>
 			<title>Antipatterns with SRE</title>
-			<link>https://alleeclark.github,io/posts/antipatterns-sre-1/</link>
+			<link>https://alleeclark.github.io/posts/antipatterns-sre-1/</link>
 			<pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
 			
-			<guid>https://alleeclark.github,io/posts/antipatterns-sre-1/</guid>
+			<guid>https://alleeclark.github.io/posts/antipatterns-sre-1/</guid>
 			<description>Today I was updating an ansible playbook that needed to perform some system level cleanups on a periodic basis. In the past my team used straight up crons. Sometimes we’ve used monit to perform checks on these crons for restart. Mainly we were on centos 6 host. Now we are on Centos 7 and have the ability to use systemD. Systemd has a time configuration that you may use to run crons.</description>
 			<content type="html"><![CDATA[<p>Today I was updating an ansible playbook that needed to perform some system level cleanups on a periodic basis. In the past my team used straight up crons. Sometimes we’ve used monit to perform checks on these crons for restart. Mainly we were on centos 6 host. Now we are on Centos 7 and have the ability to use systemD. Systemd has a time configuration that you may use to run crons. This is great because since you are on a system that supports systemd, your services should use this init system to perform controls of your service.</p>
 
