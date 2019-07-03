@@ -22,7 +22,7 @@
 <meta property="og:title" content="Antipatterns with SRE" />
 <meta property="og:description" content="Today I was updating an ansible playbook that needed to perform some system level cleanups on a periodic basis. In the past my team used straight up crons. Sometimes we’ve used monit to perform checks on these crons for restart. Mainly we were on centos 6 host. Now we are on Centos 7 and have the ability to use systemD. Systemd has a time configuration that you may use to run crons." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://alleeclark.github.io/posts/antipatterns-sre-1/" />
+<meta property="og:url" content="https://allee.xyz/posts/antipatterns-sre-1/" />
 <meta property="article:published_time" content="2019-03-17T00:00:00&#43;00:00"/>
 <meta property="article:modified_time" content="2019-03-17T00:00:00&#43;00:00"/>
 <meta name="twitter:card" content="summary"/>
@@ -37,7 +37,7 @@
 	<link rel="shortcut icon" href="/favicon.ico">
 
 	<title>Antipatterns with SRE</title>
-	<link rel="stylesheet" href="https://alleeclark.github.io/css/style.min.568c54a56780af2a70c45272522247710b69dbfc080b315211fb98381e3796f8.css" integrity="sha256-VoxUpWeArypwxFJyUiJHcQtp2/wICzFSEfuYOB43lvg=">
+	<link rel="stylesheet" href="https://allee.xyz/css/style.min.568c54a56780af2a70c45272522247710b69dbfc080b315211fb98381e3796f8.css" integrity="sha256-VoxUpWeArypwxFJyUiJHcQtp2/wICzFSEfuYOB43lvg=">
 	
 </head>
 
@@ -47,12 +47,12 @@
 		<div class="hdr-wrapper section-inner">
 			<div class="hdr-left">
 				<div class="site-branding">
-					<a href="https://alleeclark.github.io">//allee</a>
+					<a href="https://allee.xyz">//allee</a>
 				</div>
 				<nav class="site-nav hide-in-mobile">
 					
-				<a href="https://alleeclark.github.io/posts/">Posts</a>
-				<a href="https://alleeclark.github.io/about-allee/">About</a>
+				<a href="https://allee.xyz/posts/">Posts</a>
+				<a href="https://allee.xyz/about-allee/">About</a>
 
 				</nav>
 			</div>
@@ -63,8 +63,8 @@
 	</header>
 	<div id="mobile-menu" class="animated fast">
 		<ul>
-			<li><a href="https://alleeclark.github.io/posts/">Posts</a></li>
-			<li><a href="https://alleeclark.github.io/about-allee/">About</a></li>
+			<li><a href="https://allee.xyz/posts/">Posts</a></li>
+			<li><a href="https://allee.xyz/about-allee/">About</a></li>
 		</ul>
 	</div>
 
@@ -90,14 +90,14 @@
 			<hr class="post-end">
 			<footer class="post-info">
 				<p>
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://alleeclark.github.io/tags/antipatterns-with-sre">Antipatterns with SRE</a></span>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://allee.xyz/tags/antipatterns-with-sre">Antipatterns with SRE</a></span>
 				</p>
 				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>245 Words</p>
 				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-03-16 20:00 -0400</p>
 			</footer>
 		</article>
 		<div class="post-nav thin">
-			<a class="next-post" href="https://alleeclark.github.io/posts/what-should-i-do/">
+			<a class="next-post" href="https://allee.xyz/posts/what-should-i-do/">
 				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>What decision should I make about an incident?</span>
 			</a>
 		</div>
@@ -106,11 +106,11 @@
 	</main>
 
 	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
-		<p>&copy; 2019 <a href="https://alleeclark.github.io">Allee Clark</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank"</a></p>
+		<p>&copy; 2019 <a href="https://allee.xyz">Allee Clark</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank"</a></p>
 	</footer>
 
 
-	<script src="https://alleeclark.github.io/js/main.min.35ccbf1cdceb91e4c64c06b5d009d6e2977fafe56beda7762febd4e67528d2ac.js" integrity="sha256-Ncy/HNzrkeTGTAa10AnW4pd/r+Vr7ad2L+vU5nUo0qw="></script>
+	<script src="https://allee.xyz/js/main.min.35ccbf1cdceb91e4c64c06b5d009d6e2977fafe56beda7762febd4e67528d2ac.js" integrity="sha256-Ncy/HNzrkeTGTAa10AnW4pd/r+Vr7ad2L+vU5nUo0qw="></script>
 
 </body>
 
