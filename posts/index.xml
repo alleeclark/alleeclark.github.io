@@ -1,47 +1,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Posts on Speaking at Puppetize you should register :)</title>
-        <link>https://alleeclark.github.io/posts/</link>
-        <description>Recent content in Posts on Speaking at Puppetize you should register :)</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <lastBuildDate>Thu, 28 Mar 2019 00:00:00 +0000</lastBuildDate>
-        <atom:link href="https://alleeclark.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-        
-        <item>
-            <title>What decision should I make about an incident?</title>
-            <link>https://alleeclark.github.io/posts/2019/03/what-decision-should-i-make-about-an-incident/</link>
-            <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
-            
-            <guid>https://alleeclark.github.io/posts/2019/03/what-decision-should-i-make-about-an-incident/</guid>
-            <description>This is mainly written from a production engineer’s view. This might be helpful for an engineer who is response for some production service, and just wants a sanity check&amp;hellip; On with the question. Sometimes you have legacy software that most of your company’s critical path relies on. That software hasn&amp;rsquo;t powered off in X amount of scary years. Some combination of documentation, automation of task and source control code is nonexistent.</description>
-            <content type="html"><![CDATA[
+	<channel>
+		<title>Posts on //allee</title>
+		<link>https://alleeclark.github.io/posts/</link>
+		<description>Recent content in Posts on //allee</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+		<lastBuildDate>Thu, 28 Mar 2019 00:00:00 +0000</lastBuildDate>
+		<atom:link href="https://alleeclark.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>What decision should I make about an incident?</title>
+			<link>https://alleeclark.github.io/posts/what-should-i-do/</link>
+			<pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
+			
+			<guid>https://alleeclark.github.io/posts/what-should-i-do/</guid>
+			<description>This is mainly written from a production engineer’s view. This might be helpful for an engineer who is response for some production service, and just wants a sanity check&amp;hellip; On with the question. Sometimes you have legacy software that most of your company’s critical path relies on. That software hasn&amp;rsquo;t powered off in X amount of scary years. Some combination of documentation, automation of task and source control code is nonexistent.</description>
+			<content type="html"><![CDATA[
 
-<p>This is mainly written from a production engineer’s view. This might be helpful for an engineer who is response for some production service, and just wants a sanity check&hellip; On with the question. Sometimes you have legacy software that most of your company’s critical path relies on. That software hasn&rsquo;t powered off in X amount of scary years. Some combination of documentation, automation of task and source control code is nonexistent. One question to ask is — when was the last time this box (host machine) powered off? Do you know what it takes to restart process(es). Are you positive you can restart all the processes on that host if you powered it off and used that restart it trick? If the answer is no, you my friend have some <a href="https://www.missioncloud.com/blog/technical-debt-challenge-pets-cattle-cicd-pipelines" target="_blank">(pet instances)</a>. Is the recovery plan well documented? Actionable documentation is key. The documentation should contain what to do. The dependent services or jobs that might need a restart, kill, relaunch, rescheduled. The proper sequence of task execution. Consumers and the stakeholders of the system? I&rsquo;m going overkill but you get the point. What does data integrity and retention policies exist for this system? Sometimes there will be DB locks that are handling payment operations at the application layer, inoperable code that will cause memleaks or hardware failures. Is it okay to lose any of that data? I say yes it is okay to lose data. If not of course there are more expensive solutions to deploy. But you can’t think about that now. If the incident is in a domain that is out of your comfort zone with solving, than use the appropriate escalation path. Don’t just say is anyone getting a 400 error? Describe the service, where it is failing and any other key details.</p>
+<p>This is mainly written from a production engineer’s view. This might be helpful for an engineer who is response for some production service, and just wants a sanity check&hellip; On with the question. Sometimes you have legacy software that most of your company’s critical path relies on. That software hasn&rsquo;t powered off in X amount of scary years. Some combination of documentation, automation of task and source control code is nonexistent. One question to ask is — when was the last time this box (host machine) powered off? Do you know what it takes to restart process(es). Are you positive you can restart all the processes on that host if you powered it off and used that restart it trick? If the answer is no, you my friend have some <a href="https://www.missioncloud.com/blog/technical-debt-challenge-pets-cattle-cicd-pipelines">(pet instances)</a>. Is the recovery plan well documented? Actionable documentation is key. The documentation should contain what to do. The dependent services or jobs that might need a restart, kill, relaunch, rescheduled. The proper sequence of task execution. Consumers and the stakeholders of the system? I&rsquo;m going overkill but you get the point. What does data integrity and retention policies exist for this system? Sometimes there will be DB locks that are handling payment operations at the application layer, inoperable code that will cause memleaks or hardware failures. Is it okay to lose any of that data? I say yes it is okay to lose data. If not of course there are more expensive solutions to deploy. But you can’t think about that now. If the incident is in a domain that is out of your comfort zone with solving, than use the appropriate escalation path. Don’t just say is anyone getting a 400 error? Describe the service, where it is failing and any other key details.</p>
 
-<p>How important are user experiences? How are they experiencing the current incident? Not thinking how but actually engaging and getting input from your users if possible? If these are services that your users interact with, or supports internal employees to help customers have those same experiences when they call in are vital. Execute this well. Then everyone will feel great about the decisions made at the resolution. I suggest codifying as much as you can during the incident regardless if there wasn&rsquo;t anything before. I can see checking logs and restarting processes. If you are starting process(es) with different flag options, or installing dependencies; than you should code those steps and document them. That way you can have a changelog for the postmortem. The best bet is to have the code reviewed during the incident by a team member. Reviewed code helps show consensus on the path to resolution. Also if you have to step away from the incident or the incident occurs again, someone else may pick it up from your train of thought. Through this process you are improving your code base, and removing technical debt during an incident. Don’t forget to check in on the users affected . Inform them of any updates to the system and if there is any loss of data. Communication is key and make sure you consistently provide updates. Users will always inquire for an ETA. Sometimes you will be unsure. So give a time period of when you will provide the next update. 30 minutes is usually always fair unless you have strict SLAs. After this incident is over write a <a href="https://github.com/dastergon/postmortem-templates" target="_blank">postmortem</a> (Michael’s is the best IMO, and he’s a cool SRE) and publish it for the company. Don&rsquo;t have a Post morteum Culture? bring It. Send it out as an email to your organization as a technical thought. Set up a meeting with an optional invite that people can join, and learn more about your experiences and the systems that exist.</p>
+<p>How important are user experiences? How are they experiencing the current incident? Not thinking how but actually engaging and getting input from your users if possible? If these are services that your users interact with, or supports internal employees to help customers have those same experiences when they call in are vital. Execute this well. Then everyone will feel great about the decisions made at the resolution. I suggest codifying as much as you can during the incident regardless if there wasn&rsquo;t anything before. I can see checking logs and restarting processes. If you are starting process(es) with different flag options, or installing dependencies; than you should code those steps and document them. That way you can have a changelog for the postmortem. The best bet is to have the code reviewed during the incident by a team member. Reviewed code helps show consensus on the path to resolution. Also if you have to step away from the incident or the incident occurs again, someone else may pick it up from your train of thought. Through this process you are improving your code base, and removing technical debt during an incident. Don’t forget to check in on the users affected . Inform them of any updates to the system and if there is any loss of data. Communication is key and make sure you consistently provide updates. Users will always inquire for an ETA. Sometimes you will be unsure. So give a time period of when you will provide the next update. 30 minutes is usually always fair unless you have strict SLAs. After this incident is over write a <a href="https://github.com/dastergon/postmortem-templates">postmortem</a> (Michael’s is the best IMO, and he’s a cool SRE) and publish it for the company. Don&rsquo;t have a Post morteum Culture? bring It. Send it out as an email to your organization as a technical thought. Set up a meeting with an optional invite that people can join, and learn more about your experiences and the systems that exist.</p>
 
 <h4 id="but-guess-what-now-you-know-more-about-how-that-shit-works">But guess what. Now you know more about how that shit works.</h4>
 ]]></content>
-        </item>
-        
-        <item>
-            <title>Antipatterns with SRE</title>
-            <link>https://alleeclark.github.io/posts/2019/03/antipatterns-with-sre/</link>
-            <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
-            
-            <guid>https://alleeclark.github.io/posts/2019/03/antipatterns-with-sre/</guid>
-            <description>Today I was updating an ansible playbook that needed to perform some system level cleanups on a periodic basis. In the past my team used straight up crons. Sometimes we’ve used monit to perform checks on these crons for restart. Mainly we were on centos 6 host. Now we are on Centos 7 and have the ability to use systemD. Systemd has a time configuration that you may use to run crons.</description>
-            <content type="html"><![CDATA[<p>Today I was updating an ansible playbook that needed to perform some system level cleanups on a periodic basis. In the past my team used straight up crons. Sometimes we’ve used monit to perform checks on these crons for restart. Mainly we were on centos 6 host. Now we are on Centos 7 and have the ability to use systemD. Systemd has a time configuration that you may use to run crons. This is great because since you are on a system that supports systemd, your services should use this init system to perform controls of your service.</p>
+		</item>
+		
+		<item>
+			<title>Antipatterns with SRE</title>
+			<link>https://alleeclark.github.io/posts/antipatterns-sre-1/</link>
+			<pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+			
+			<guid>https://alleeclark.github.io/posts/antipatterns-sre-1/</guid>
+			<description>Today I was updating an ansible playbook that needed to perform some system level cleanups on a periodic basis. In the past my team used straight up crons. Sometimes we’ve used monit to perform checks on these crons for restart. Mainly we were on centos 6 host. Now we are on Centos 7 and have the ability to use systemD. Systemd has a time configuration that you may use to run crons.</description>
+			<content type="html"><![CDATA[<p>Today I was updating an ansible playbook that needed to perform some system level cleanups on a periodic basis. In the past my team used straight up crons. Sometimes we’ve used monit to perform checks on these crons for restart. Mainly we were on centos 6 host. Now we are on Centos 7 and have the ability to use systemD. Systemd has a time configuration that you may use to run crons. This is great because since you are on a system that supports systemd, your services should use this init system to perform controls of your service.</p>
 
-<p>I dont want to get into a bunch of pros vs cons that could be found here <a href="https://unix.stackexchange.com/questions/278564/cron-vs-systemd-timers" target="_blank">https://unix.stackexchange.com/questions/278564/cron-vs-systemd-timers</a></p>
+<p>I dont want to get into a bunch of pros vs cons that could be found here <a href="https://unix.stackexchange.com/questions/278564/cron-vs-systemd-timers">https://unix.stackexchange.com/questions/278564/cron-vs-systemd-timers</a></p>
 
-<p>And <a href="https://medium.com/horrible-hacks/using-systemd-as-a-better-cron-a4023eea996d" target="_blank">https://medium.com/horrible-hacks/using-systemd-as-a-better-cron-a4023eea996d</a>. One thing was that wasn’t covered is that you should have your service files source coded somewhere. Either in you linux package building process or your configuration management repository.</p>
+<p>And <a href="https://medium.com/horrible-hacks/using-systemd-as-a-better-cron-a4023eea996d">https://medium.com/horrible-hacks/using-systemd-as-a-better-cron-a4023eea996d</a>. One thing was that wasn’t covered is that you should have your service files source coded somewhere. Either in you linux package building process or your configuration management repository.</p>
 
-<p>From an abstraction standpoint. Standardizing your services to use systemd will allow you to easily develop a tool like Core Os’s <a href="https://coreos.com/fleet/docs/latest/" target="_blank">fleet</a>. Writing a tool to remotely manage all your systemd services,adds a lot of value. And why not add some options to configure other options for your service.</p>
+<p>From an abstraction standpoint. Standardizing your services to use systemd will allow you to easily develop a tool like Core Os’s <a href="https://coreos.com/fleet/docs/latest/">fleet</a>. Writing a tool to remotely manage all your systemd services,adds a lot of value. And why not add some options to configure other options for your service.</p>
 
-<p>There are certainly other server management systems that you can use. <a href="https://www.youtube.com/watch?v=o_AIw9bGogo&amp;t=2177s" target="_blank">Here</a> is a good talk of the history of other software like systemd on Linux to FreeBSD and Mac OS. Not related to this thought but related to understanding systemd if you have no idea what it is.</p>
+<p>There are certainly other server management systems that you can use. <a href="https://www.youtube.com/watch?v=o_AIw9bGogo&amp;t=2177s">Here</a> is a good talk of the history of other software like systemd on Linux to FreeBSD and Mac OS. Not related to this thought but related to understanding systemd if you have no idea what it is.</p>
 ]]></content>
-        </item>
-        
-    </channel>
+		</item>
+		
+	</channel>
 </rss>

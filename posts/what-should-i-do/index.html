@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+
+<meta itemprop="name" content="What decision should I make about an incident?">
+<meta itemprop="description" content="This is mainly written from a production engineer’s view. This might be helpful for an engineer who is response for some production service, and just wants a sanity check&hellip; On with the question. Sometimes you have legacy software that most of your company’s critical path relies on. That software hasn&rsquo;t powered off in X amount of scary years. Some combination of documentation, automation of task and source control code is nonexistent.">
+
+
+<meta itemprop="datePublished" content="2019-03-28T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-03-28T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="640">
+
+
+
+<meta itemprop="keywords" content="Production Engineering," />
+<meta property="og:title" content="What decision should I make about an incident?" />
+<meta property="og:description" content="This is mainly written from a production engineer’s view. This might be helpful for an engineer who is response for some production service, and just wants a sanity check&hellip; On with the question. Sometimes you have legacy software that most of your company’s critical path relies on. That software hasn&rsquo;t powered off in X amount of scary years. Some combination of documentation, automation of task and source control code is nonexistent." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://alleeclark.github.io/posts/what-should-i-do/" />
+<meta property="article:published_time" content="2019-03-28T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-03-28T00:00:00&#43;00:00"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="What decision should I make about an incident?"/>
+<meta name="twitter:description" content="This is mainly written from a production engineer’s view. This might be helpful for an engineer who is response for some production service, and just wants a sanity check&hellip; On with the question. Sometimes you have legacy software that most of your company’s critical path relies on. That software hasn&rsquo;t powered off in X amount of scary years. Some combination of documentation, automation of task and source control code is nonexistent."/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>What decision should I make about an incident?</title>
+	<link rel="stylesheet" href="https://alleeclark.github.io/css/style.min.568c54a56780af2a70c45272522247710b69dbfc080b315211fb98381e3796f8.css" integrity="sha256-VoxUpWeArypwxFJyUiJHcQtp2/wICzFSEfuYOB43lvg=">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://alleeclark.github.io">//allee</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://alleeclark.github.io/posts/">Posts</a>
+				<a href="https://alleeclark.github.io/about-allee/">About</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/alleeclark" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="mailto:alleeclark@gmail.com" target="_blank" rel="noopener me" title="Email"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a><a href="https://github.com/alleeclark" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="https://www.linkedin.com/in/alleexyz/" target="_blank" rel="noopener me" title="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://alleeclark.github.io/posts/">Posts</a></li>
+			<li><a href="https://alleeclark.github.io/about-allee/">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Mar 28, 2019</span></div>
+				<h1>What decision should I make about an incident?</h1>
+			</header>
+			<div class="content">
+				
+
+<p>This is mainly written from a production engineer’s view. This might be helpful for an engineer who is response for some production service, and just wants a sanity check&hellip; On with the question. Sometimes you have legacy software that most of your company’s critical path relies on. That software hasn&rsquo;t powered off in X amount of scary years. Some combination of documentation, automation of task and source control code is nonexistent. One question to ask is — when was the last time this box (host machine) powered off? Do you know what it takes to restart process(es). Are you positive you can restart all the processes on that host if you powered it off and used that restart it trick? If the answer is no, you my friend have some <a href="https://www.missioncloud.com/blog/technical-debt-challenge-pets-cattle-cicd-pipelines">(pet instances)</a>. Is the recovery plan well documented? Actionable documentation is key. The documentation should contain what to do. The dependent services or jobs that might need a restart, kill, relaunch, rescheduled. The proper sequence of task execution. Consumers and the stakeholders of the system? I&rsquo;m going overkill but you get the point. What does data integrity and retention policies exist for this system? Sometimes there will be DB locks that are handling payment operations at the application layer, inoperable code that will cause memleaks or hardware failures. Is it okay to lose any of that data? I say yes it is okay to lose data. If not of course there are more expensive solutions to deploy. But you can’t think about that now. If the incident is in a domain that is out of your comfort zone with solving, than use the appropriate escalation path. Don’t just say is anyone getting a 400 error? Describe the service, where it is failing and any other key details.</p>
+
+<p>How important are user experiences? How are they experiencing the current incident? Not thinking how but actually engaging and getting input from your users if possible? If these are services that your users interact with, or supports internal employees to help customers have those same experiences when they call in are vital. Execute this well. Then everyone will feel great about the decisions made at the resolution. I suggest codifying as much as you can during the incident regardless if there wasn&rsquo;t anything before. I can see checking logs and restarting processes. If you are starting process(es) with different flag options, or installing dependencies; than you should code those steps and document them. That way you can have a changelog for the postmortem. The best bet is to have the code reviewed during the incident by a team member. Reviewed code helps show consensus on the path to resolution. Also if you have to step away from the incident or the incident occurs again, someone else may pick it up from your train of thought. Through this process you are improving your code base, and removing technical debt during an incident. Don’t forget to check in on the users affected . Inform them of any updates to the system and if there is any loss of data. Communication is key and make sure you consistently provide updates. Users will always inquire for an ETA. Sometimes you will be unsure. So give a time period of when you will provide the next update. 30 minutes is usually always fair unless you have strict SLAs. After this incident is over write a <a href="https://github.com/dastergon/postmortem-templates">postmortem</a> (Michael’s is the best IMO, and he’s a cool SRE) and publish it for the company. Don&rsquo;t have a Post morteum Culture? bring It. Send it out as an email to your organization as a technical thought. Set up a meeting with an optional invite that people can join, and learn more about your experiences and the systems that exist.</p>
+
+<h4 id="but-guess-what-now-you-know-more-about-how-that-shit-works">But guess what. Now you know more about how that shit works.<a href="#but-guess-what-now-you-know-more-about-how-that-shit-works" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://alleeclark.github.io/tags/production-engineering">Production Engineering</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>640 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-03-27 20:00 -0400</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="prev-post" href="https://alleeclark.github.io/posts/antipatterns-sre-1/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>Antipatterns with SRE</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2019 <a href="https://alleeclark.github.io">Allee Clark</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank"</a></p>
+	</footer>
+
+
+	<script src="https://alleeclark.github.io/js/main.min.35ccbf1cdceb91e4c64c06b5d009d6e2977fafe56beda7762febd4e67528d2ac.js" integrity="sha256-Ncy/HNzrkeTGTAa10AnW4pd/r+Vr7ad2L+vU5nUo0qw="></script>
+
+</body>
+
+</html>

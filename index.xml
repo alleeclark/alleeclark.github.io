@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Speaking at Puppetize you should register :)</title>
+    <title>//allee</title>
     <link>https://alleeclark.github.io/</link>
-    <description>Recent content on Speaking at Puppetize you should register :)</description>
+    <description>Recent content on //allee</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Thu, 28 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://alleeclark.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -12,28 +14,28 @@
     
     <item>
       <title>What decision should I make about an incident?</title>
-      <link>https://alleeclark.github.io/posts/2019/03/what-decision-should-i-make-about-an-incident/</link>
+      <link>https://alleeclark.github.io/posts/what-should-i-do/</link>
       <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://alleeclark.github.io/posts/2019/03/what-decision-should-i-make-about-an-incident/</guid>
+      <guid>https://alleeclark.github.io/posts/what-should-i-do/</guid>
       <description>This is mainly written from a production engineer’s view. This might be helpful for an engineer who is response for some production service, and just wants a sanity check&amp;hellip; On with the question. Sometimes you have legacy software that most of your company’s critical path relies on. That software hasn&amp;rsquo;t powered off in X amount of scary years. Some combination of documentation, automation of task and source control code is nonexistent.</description>
     </item>
     
     <item>
       <title>Antipatterns with SRE</title>
-      <link>https://alleeclark.github.io/posts/2019/03/antipatterns-with-sre/</link>
+      <link>https://alleeclark.github.io/posts/antipatterns-sre-1/</link>
       <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://alleeclark.github.io/posts/2019/03/antipatterns-with-sre/</guid>
+      <guid>https://alleeclark.github.io/posts/antipatterns-sre-1/</guid>
       <description>Today I was updating an ansible playbook that needed to perform some system level cleanups on a periodic basis. In the past my team used straight up crons. Sometimes we’ve used monit to perform checks on these crons for restart. Mainly we were on centos 6 host. Now we are on Centos 7 and have the ability to use systemD. Systemd has a time configuration that you may use to run crons.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://alleeclark.github.io/about/</link>
+      <link>https://alleeclark.github.io/about-allee/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://alleeclark.github.io/about/</guid>
+      <guid>https://alleeclark.github.io/about-allee/</guid>
       <description>I am Allee. Currently an SRE at Oscar Health. Before this I was working on/with data science teams at Dell. Built and supported highly avaiable search clusters for machine learning logs. I am a product of an HBCU. Being culuturally reposible is very important to me. I love cooking. I treat cookbooks like textbooks and hope to publish some day.
 I&amp;rsquo;ll Share technical thoughts and post reviews of books and conferences.</description>
     </item>
