@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on //allee</title>
-    <link>https://allee.xyz/tags/</link>
+    <link>https://alleeclark.github.io/tags/</link>
     <description>Recent content in Tags on //allee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Thu, 28 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://allee.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://alleeclark.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Production Engineering</title>
-      <link>https://allee.xyz/tags/production-engineering/</link>
+      <link>https://alleeclark.github.io/tags/production-engineering/</link>
       <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://allee.xyz/tags/production-engineering/</guid>
+      <guid>https://alleeclark.github.io/tags/production-engineering/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Antipatterns with SRE</title>
-      <link>https://allee.xyz/tags/antipatterns-with-sre/</link>
+      <link>https://alleeclark.github.io/tags/antipatterns-with-sre/</link>
       <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://allee.xyz/tags/antipatterns-with-sre/</guid>
+      <guid>https://alleeclark.github.io/tags/antipatterns-with-sre/</guid>
       <description></description>
     </item>
     

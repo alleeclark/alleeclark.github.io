@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Antipatterns with SRE on //allee</title>
-    <link>https://allee.xyz/tags/antipatterns-with-sre/</link>
+    <link>https://alleeclark.github.io/tags/antipatterns-with-sre/</link>
     <description>Recent content in Antipatterns with SRE on //allee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Sun, 17 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://allee.xyz/tags/antipatterns-with-sre/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://alleeclark.github.io/tags/antipatterns-with-sre/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Antipatterns with SRE</title>
-      <link>https://allee.xyz/posts/antipatterns-sre-1/</link>
+      <link>https://alleeclark.github.io/posts/antipatterns-sre-1/</link>
       <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://allee.xyz/posts/antipatterns-sre-1/</guid>
+      <guid>https://alleeclark.github.io/posts/antipatterns-sre-1/</guid>
       <description>Today I was updating an ansible playbook that needed to perform some system level cleanups on a periodic basis. In the past my team used straight up crons. Sometimes we’ve used monit to perform checks on these crons for restart. Mainly we were on centos 6 host. Now we are on Centos 7 and have the ability to use systemD. Systemd has a time configuration that you may use to run crons.</description>
     </item>
     
