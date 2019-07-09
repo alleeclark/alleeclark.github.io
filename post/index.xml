@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Hello Friend</title>
-    <link>https://alleeclark.github.io/post/</link>
-    <description>Recent content in Posts on Hello Friend</description>
+    <title>Posts on //allee</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on //allee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Sep 1986 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://alleeclark.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hello Friend</title>
-      <link>https://alleeclark.github.io/post/hello/</link>
-      <pubDate>Wed, 17 Sep 1986 00:00:00 +0000</pubDate>
+      <title>Puppetize</title>
+      <link>/post/hello/</link>
+      <pubDate>Thu, 09 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://alleeclark.github.io/post/hello/</guid>
-      <description> &amp;ldquo;Hello, friend?&amp;rdquo; That&amp;rsquo;s lame. Maybe I should give you a name&amp;hellip; But that&amp;rsquo;s a slippery slope. You&amp;rsquo;re only in my head. We have to remember that&amp;hellip; Shit. It&amp;rsquo;s actually happened. I&amp;rsquo;m talking to an imaginary person.
-— Mr. Robot S01E01
- </description>
+      <guid>/post/hello/</guid>
+      <description>You should come join us October in Portland https://puppet.com/puppetize/overview/registration-pricing</description>
     </item>
     
   </channel>
