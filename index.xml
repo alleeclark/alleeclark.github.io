@@ -6,18 +6,20 @@
     <description>Recent content on //allee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://alleeclark.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Puppetize</title>
-      <link>https://alleeclark.github.io/post/hello/</link>
-      <pubDate>Sat, 25 May 2019 00:00:00 +0000</pubDate>
+      <title>Upcoming talks</title>
+      <link>https://alleeclark.github.io/post/talks/</link>
+      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://alleeclark.github.io/post/hello/</guid>
-      <description>You should come join us October in Portland https://puppet.com/puppetize/overview/registration-pricing</description>
+      <guid>https://alleeclark.github.io/post/talks/</guid>
+      <description> A conference for early career developers looking to naviagte through the industry https://www.adulting.dev/ you may use my discount code for a few bucks off :)
+ You should come join us October in Portland at Puppetize
+  </description>
     </item>
     
     <item>
