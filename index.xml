@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Getting started with ttrpc</title>
+      <link>https://alleeclark.github.io/ttrpc/</link>
+      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://alleeclark.github.io/ttrpc/</guid>
+      <description>I believe ttrpc stands for teeny tiny rpc. Don&amp;rsquo;t quote me on it. Created for low latency environments based off of the famous gRPC. I was introduced by ttrpc in a talk given by a containerD maintainer. Unexpected for you to know how containerD functions to get started with ttrpc.
+This guide is aimed for developers who know gRPC and would like to get started with ttrpc. Knowledge of gRPC isn&amp;rsquo;t required, however knowledge of golang and tcp is needed.</description>
+    </item>
+    
+    <item>
       <title>Upcoming talks</title>
       <link>https://alleeclark.github.io/post/talks/</link>
       <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
