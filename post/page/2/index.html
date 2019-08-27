@@ -117,63 +117,10 @@
 
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://alleeclark.github.io/post/getting-started-with-ttrpc/">Getting started with ttrpc</a></h1>
+      <h1 class="post-title"><a href="https://alleeclark.github.io/post/antipatterns-in-sre/">Antipatterns with SRE</a></h1>
       <div class="post-meta">
         <span class="post-date">
-          2019-08-25
-        </span>
-        <span class="post-author">— Written by Allee Clark</span>
-        
-          <span class="post-read-time">— 3 min read</span>
-        
-      </div>
-
-
-      
-
-      
-
-      <div class="post-content">
-        
-          
-            I believe ttrpc stands for teeny tiny rpc. Don&rsquo;t quote me on it. Created for low latency environments based off of the famous gRPC. I was introduced by ttrpc in a talk given by a containerD maintainer. Unexpected for you to know how containerD functions to get started with ttrpc.
-This guide is aimed for developers who know gRPC and would like to get started with ttrpc. Knowledge of gRPC isn&rsquo;t required, however knowledge of golang and tcp is needed.
-          
-        
-      </div>
-      <div><a class="read-more button" href="/post/getting-started-with-ttrpc/">Read more →</a></div>
-    </div>
-    
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://alleeclark.github.io/post/upcoming-talks/">Upcoming talks</a></h1>
-      <div class="post-meta">
-        <span class="post-date">
-          2019-08-25
-        </span>
-        
-        
-          <span class="post-read-time">— 1 min read</span>
-        
-      </div>
-
-
-      
-
-      
-
-      <div class="post-content">
-        
-          
-        
-      </div>
-      <div><a class="read-more button" href="/post/upcoming-talks/">Read more →</a></div>
-    </div>
-    
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://alleeclark.github.io/post/vscode-tips-tricks-1/">VSCode Productivity Tips &amp; Tricks</a></h1>
-      <div class="post-meta">
-        <span class="post-date">
-          2019-05-17
+          2019-03-17
         </span>
         <span class="post-author">— Written by Allee Clark</span>
         
@@ -188,74 +135,24 @@ This guide is aimed for developers who know gRPC and would like to get started w
 
       <div class="post-content">
         
-          Extensions that help me reach a new level of productivity
-        
-      </div>
-      <div><a class="read-more button" href="/post/vscode-tips-tricks-1/">Read more →</a></div>
-    </div>
-    
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://alleeclark.github.io/post/daily-sre-routine/">My Daily SRE Schedule</a></h1>
-      <div class="post-meta">
-        <span class="post-date">
-          2019-05-03
-        </span>
-        <span class="post-author">— Written by Allee Clark</span>
-        
-          <span class="post-read-time">— 2 min read</span>
-        
-      </div>
-
-
-      
-
-      
-
-      <div class="post-content">
-        
-          Some may what to know what does my day look like?
-        
-      </div>
-      <div><a class="read-more button" href="/post/daily-sre-routine/">Read more →</a></div>
-    </div>
-    
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://alleeclark.github.io/post/incident-decisions/">What decision should I make about an incident?</a></h1>
-      <div class="post-meta">
-        <span class="post-date">
-          2019-03-28
-        </span>
-        <span class="post-author">— Written by Allee Clark</span>
-        
-          <span class="post-read-time">— 4 min read</span>
-        
-      </div>
-
-
-      
-
-      
-
-      <div class="post-content">
-        
           
-            This is mainly written from a production engineer’s view. This might be helpful for an engineer who is response for some production service, and just wants a sanity check&hellip; On with the question. Sometimes you have legacy software that most of your company’s critical path relies on. That software hasn&rsquo;t powered off in X amount of scary years. Some combination of documentation, automation of task and source control code is nonexistent.
+            Today I was updating an ansible playbook that needed to perform some system level cleanups on a periodic basis. In the past my team used straight up crons. Sometimes we’ve used monit to perform checks on these crons for restart. Mainly we were on centos 6 host. Now we are on Centos 7 and have the ability to use systemD. Systemd has a time configuration that you may use to run crons.
           
         
       </div>
-      <div><a class="read-more button" href="/post/incident-decisions/">Read more →</a></div>
+      <div><a class="read-more button" href="/post/antipatterns-in-sre/">Read more →</a></div>
     </div>
     
     <div class="pagination">
   <div class="pagination__buttons">
     
-    
-      <span class="button next">
-        <a href="/post/page/2/">
-          <span class="button__text">Older posts</span>
-          <span class="button__icon">→</span>
+      <span class="button previous">
+        <a href="/post/">
+          <span class="button__icon">←</span>
+          <span class="button__text">Newer posts</span>
         </a>
       </span>
+    
     
   </div>
 </div>

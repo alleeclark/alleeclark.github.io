@@ -45,6 +45,15 @@ Pros:
     </item>
     
     <item>
+      <title>My Daily SRE Schedule</title>
+      <link>https://alleeclark.github.io/post/daily-sre-routine/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://alleeclark.github.io/post/daily-sre-routine/</guid>
+      <description>The schedule below isn’t the full picture because I normally go on call every few weeks. I spend on call days communicating with other teams and resolving incidents. Bi-weekly attending meetings related to on-boarding, recruiting tech talks, and all hands. I only read work email in the morning unless someone PMs me to review. My company also uses Slack for communication and I limit my time on there as well. This facilitates minimizing distractions and intaking too much information.</description>
+    </item>
+    
+    <item>
       <title>What decision should I make about an incident?</title>
       <link>https://alleeclark.github.io/post/incident-decisions/</link>
       <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
