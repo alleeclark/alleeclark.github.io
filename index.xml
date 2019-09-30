@@ -6,10 +6,37 @@
     <description>Recent content on //allee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://alleeclark.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>One SRE’s Struggle and Success to Improve Infrastructure as Code</title>
+      <link>https://alleeclark.github.io/post/antipatterns-in-sre/</link>
+      <pubDate>Mon, 30 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://alleeclark.github.io/post/antipatterns-in-sre/</guid>
+      <description>https://thenewstack.io/one-sres-struggle-and-success-to-improve-infrastructure-as-code/</description>
+    </item>
+    
+    <item>
+      <title>Previous talks</title>
+      <link>https://alleeclark.github.io/post/past-talks/</link>
+      <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://alleeclark.github.io/post/past-talks/</guid>
+      <description> A conference for early career developers looking to naviagte through the industry https://www.adulting.dev/ you may use my discount code for a few bucks off :)  </description>
+    </item>
+    
+    <item>
+      <title>Upcoming talks</title>
+      <link>https://alleeclark.github.io/post/upcoming-talks/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://alleeclark.github.io/post/upcoming-talks/</guid>
+      <description> You should come join us October in Portland at Puppetize  </description>
+    </item>
     
     <item>
       <title>Getting started with ttrpc</title>
@@ -19,17 +46,6 @@
       <guid>https://alleeclark.github.io/post/getting-started-with-ttrpc/</guid>
       <description>I believe ttrpc stands for teeny tiny rpc. Don&amp;rsquo;t quote me on it. Created for low latency environments based off of the famous gRPC. I was introduced by ttrpc in a talk given by a containerD maintainer. Unexpected for you to know how containerD functions to get started with ttrpc.
 This guide is aimed for developers who know gRPC and would like to get started with ttrpc. Knowledge of gRPC isn&amp;rsquo;t required, however knowledge of golang and tcp is needed.</description>
-    </item>
-    
-    <item>
-      <title>Upcoming talks</title>
-      <link>https://alleeclark.github.io/post/upcoming-talks/</link>
-      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://alleeclark.github.io/post/upcoming-talks/</guid>
-      <description> A conference for early career developers looking to naviagte through the industry https://www.adulting.dev/ you may use my discount code for a few bucks off :)
- You should come join us October in Portland at Puppetize
-  </description>
     </item>
     
     <item>
@@ -63,15 +79,6 @@ Pros:
     </item>
     
     <item>
-      <title>Antipatterns with SRE</title>
-      <link>https://alleeclark.github.io/post/antipatterns-in-sre/</link>
-      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://alleeclark.github.io/post/antipatterns-in-sre/</guid>
-      <description>Today I was updating an ansible playbook that needed to perform some system level cleanups on a periodic basis. In the past my team used straight up crons. Sometimes we’ve used monit to perform checks on these crons for restart. Mainly we were on centos 6 host. Now we are on Centos 7 and have the ability to use systemD. Systemd has a time configuration that you may use to run crons.</description>
-    </item>
-    
-    <item>
       <title>About</title>
       <link>https://alleeclark.github.io/about/</link>
       <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
@@ -79,6 +86,15 @@ Pros:
       <guid>https://alleeclark.github.io/about/</guid>
       <description>I am Allee. Currently an SRE at Oscar Health. Before this I was working on/with data science teams at Dell. Built and supported highly available search clusters for machine learning logs. I am a product of an HBCU. Being culturally responsible is very important to me. I love cooking. I treat cookbooks like textbooks and hope to publish some day.
 I&amp;rsquo;ll Share technical thoughts and post reviews of books and conferences.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://alleeclark.github.io/post/new-stack-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alleeclark.github.io/post/new-stack-post/</guid>
+      <description></description>
     </item>
     
     <item>
