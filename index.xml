@@ -54,7 +54,8 @@ This guide is aimed for developers who know gRPC and would like to get started w
       <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://alleeclark.github.io/post/vscode-tips-tricks-1/</guid>
-      <description>More than likely I am a Microsoft developer tool advocate. My first language was c++ using Visual Studio. Haven’t stopped sipping the kool aid since. Even though my primary language is golang today
+      <description>[Updated 10/3/2019]
+More than likely I am a Microsoft developer tool advocate. My first language was c++ using Visual Studio. Haven’t stopped sipping the kool aid since. Even though my primary language is golang today.
 Bookmarks Same principle as your web browser. Keep track of places in the code that you know you will need to come back to.
 Pros:
  Label bookmarks Side View for all bookmarks per file Search Bookmarks  Cons:</description>
