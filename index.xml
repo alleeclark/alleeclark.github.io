@@ -6,10 +6,21 @@
     <description>Recent content on //allee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://alleeclark.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Runbook checklist</title>
+      <link>https://alleeclark.github.io/post/runbook-checklist/</link>
+      <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://alleeclark.github.io/post/runbook-checklist/</guid>
+      <description>Why do we fail at what we set out to do in teh world. One reason, they observed is &amp;ldquo;neccessary fallibility&amp;rdquo;- &amp;ndash;some things we want to do are simply beyond our capacity. We are not omniscient or all powerful. Even ehanced by techology, our physical and mental powers are limited. Many things will remain outside our understanding and control.
+We have jut two reasons that we may nonethess fail.
+First is ignorance &amp;ndash; we may err because sciencce has givenis only a partial understanding of the world and how it works.</description>
+    </item>
     
     <item>
       <title>One SRE’s Struggle and Success to Improve Infrastructure as Code</title>
@@ -58,7 +69,7 @@ This guide is aimed for developers who know gRPC and would like to get started w
 More than likely I am a Microsoft developer tool advocate. My first language was c++ using Visual Studio. Haven’t stopped sipping the kool aid since. Even though my primary language is golang today.
 Bookmarks Same principle as your web browser. Keep track of places in the code that you know you will need to come back to.
 Pros:
- Label bookmarks Side View for all bookmarks per file Search Bookmarks  Cons:</description>
+ Label bookmarks Side view for all bookmarks per file Search bookmarks  Cons:</description>
     </item>
     
     <item>
