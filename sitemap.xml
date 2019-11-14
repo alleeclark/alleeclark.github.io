@@ -4,19 +4,24 @@
   
   <url>
     <loc>https://alleeclark.github.io/</loc>
-    <lastmod>2019-09-30T00:00:00+00:00</lastmod>
+    <lastmod>2019-11-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/post/getting-started-with-go-getter/</loc>
+    <lastmod>2019-11-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/post/</loc>
+    <lastmod>2019-11-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://alleeclark.github.io/post/antipatterns-in-sre/</loc>
     <lastmod>2019-09-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alleeclark.github.io/post/</loc>
-    <lastmod>2019-09-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

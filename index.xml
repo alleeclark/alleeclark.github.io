@@ -6,10 +6,20 @@
     <description>Recent content on //allee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://alleeclark.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Getting started with go getter</title>
+      <link>https://alleeclark.github.io/post/getting-started-with-go-getter/</link>
+      <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://alleeclark.github.io/post/getting-started-with-go-getter/</guid>
+      <description>This post is a small example of how to use Hashicorp&amp;rsquo;s go-getter. This package allows you to pull files easily from GCS, GIT or S3. I&amp;rsquo;ll explain a bit about my use case below. I assume you know about Hashicorp and golang and looking for a clean example to get started.
+For the past few weeks, I&amp;rsquo;ve written designs for a delivery system using Hashi(Hashicorp) tools such as Consul for keys and service discovery, Vault for dynamic secrets, and Terraform to create and modify infrastructure resources.</description>
+    </item>
     
     <item>
       <title>One SRE’s Struggle and Success to Improve Infrastructure as Code</title>
