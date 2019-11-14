@@ -22,20 +22,11 @@
     
     <item>
       <title>Previous talks</title>
-      <link>https://alleeclark.github.io/post/past-talks/</link>
+      <link>https://alleeclark.github.io/post/previous-talks/</link>
       <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://alleeclark.github.io/post/past-talks/</guid>
-      <description> A conference for early career developers looking to naviagte through the industry https://www.adulting.dev/ you may use my discount code for a few bucks off :)  </description>
-    </item>
-    
-    <item>
-      <title>Upcoming talks</title>
-      <link>https://alleeclark.github.io/post/upcoming-talks/</link>
-      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://alleeclark.github.io/post/upcoming-talks/</guid>
-      <description> You should come join us October in Portland at Puppetize  </description>
+      <guid>https://alleeclark.github.io/post/previous-talks/</guid>
+      <description> adulting.dev Puppetize  </description>
     </item>
     
     <item>
@@ -85,8 +76,9 @@ Pros:
       <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://alleeclark.github.io/about/</guid>
-      <description>I am Allee. Currently an SRE at Oscar Health. Before this I was working on/with data science teams at Dell. Built and supported highly available search clusters for machine learning logs. I am a product of an HBCU. Being culturally responsible is very important to me. I love cooking. I treat cookbooks like textbooks and hope to publish some day.
-I&amp;rsquo;ll Share technical thoughts and post reviews of books and conferences.</description>
+      <description>I am Allee. Currently an SRE at Oscar Health working on credentials, service discovery, and observability. Before this I was working on/with data science teams at Dell. Built and supported highly available search clusters for machine learning logs. I&amp;rsquo;ve lived in Texas, DC, and Philly. I love cars. Especially cars with a manual transmission.
+I&amp;rsquo;ll Share technical thoughts and post reviews of books and conferences.
+A good way to set up a 1x1 is here.</description>
     </item>
     
     <item>
