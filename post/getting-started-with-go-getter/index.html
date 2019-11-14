@@ -165,7 +165,7 @@ func main() {
 	}
 	//download the files
 	if err := client.Get(); err != nil {
-		fmt.Fprintf(os.Stderr, &quot;Error getting path %s: %v&quot;, &quot;&quot;, err)
+		fmt.Fprintf(os.Stderr, &quot;Error getting path %s: %v&quot;, client.Src, err)
 		os.Exit(1)
 	}
 	//now you should check your temp directory for the files to see if they exist
