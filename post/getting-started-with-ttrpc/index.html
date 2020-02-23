@@ -6,8 +6,8 @@
     
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content="I believe ttrpc stands for teeny tiny rpc. Don&amp;rsquo;t quote me on it. Created for low latency environments based off of the famous gRPC. I was introduced by ttrpc in a talk given by a containerD maintainer. Unexpected for you to know how containerD functions to get started with ttrpc.
-This guide is aimed for developers who know gRPC and would like to get started with ttrpc. Knowledge of gRPC isn&amp;rsquo;t required, however knowledge of golang and tcp is needed."/>
+<meta name="description" content="I believe ttrpc stands for teeny tiny rpc. Don&#39;t quote me on it. Created for low latency environments based off of the famous gRPC. I was introduced by ttrpc in a talk given by a containerD maintainer. Unexpected for you to know how containerD functions to get started with ttrpc.
+This guide is aimed for developers who know gRPC and would like to get started with ttrpc. Knowledge of gRPC isn&#39;t required, however knowledge of golang and tcp is needed."/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
 <link rel="canonical" href="https://alleeclark.github.io/post/getting-started-with-ttrpc/" />
@@ -25,14 +25,14 @@ This guide is aimed for developers who know gRPC and would like to get started w
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Getting started with ttrpc"/>
-<meta name="twitter:description" content="I believe ttrpc stands for teeny tiny rpc. Don&rsquo;t quote me on it. Created for low latency environments based off of the famous gRPC. I was introduced by ttrpc in a talk given by a containerD maintainer. Unexpected for you to know how containerD functions to get started with ttrpc.
-This guide is aimed for developers who know gRPC and would like to get started with ttrpc. Knowledge of gRPC isn&rsquo;t required, however knowledge of golang and tcp is needed."/>
+<meta name="twitter:description" content="I believe ttrpc stands for teeny tiny rpc. Don&#39;t quote me on it. Created for low latency environments based off of the famous gRPC. I was introduced by ttrpc in a talk given by a containerD maintainer. Unexpected for you to know how containerD functions to get started with ttrpc.
+This guide is aimed for developers who know gRPC and would like to get started with ttrpc. Knowledge of gRPC isn&#39;t required, however knowledge of golang and tcp is needed."/>
 
 
 
 <meta property="og:title" content="Getting started with ttrpc" />
-<meta property="og:description" content="I believe ttrpc stands for teeny tiny rpc. Don&rsquo;t quote me on it. Created for low latency environments based off of the famous gRPC. I was introduced by ttrpc in a talk given by a containerD maintainer. Unexpected for you to know how containerD functions to get started with ttrpc.
-This guide is aimed for developers who know gRPC and would like to get started with ttrpc. Knowledge of gRPC isn&rsquo;t required, however knowledge of golang and tcp is needed." />
+<meta property="og:description" content="I believe ttrpc stands for teeny tiny rpc. Don&#39;t quote me on it. Created for low latency environments based off of the famous gRPC. I was introduced by ttrpc in a talk given by a containerD maintainer. Unexpected for you to know how containerD functions to get started with ttrpc.
+This guide is aimed for developers who know gRPC and would like to get started with ttrpc. Knowledge of gRPC isn&#39;t required, however knowledge of golang and tcp is needed." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://alleeclark.github.io/post/getting-started-with-ttrpc/" />
 <meta property="article:published_time" content="2019-08-25T00:00:00+00:00" />
@@ -131,173 +131,133 @@ This guide is aimed for developers who know gRPC and would like to get started w
     
 
     <div class="post-content">
-      
-
-<p>I believe ttrpc stands for teeny tiny rpc. Don&rsquo;t quote me on it. Created for low latency environments based off of the famous <a href="https://grpc.io/">gRPC</a>. I was introduced by ttrpc in a talk given by a <a href="https://github.com/containerd">containerD</a> maintainer. Unexpected for you to know how containerD functions to get started with ttrpc.</p>
-
-<p>This guide is aimed for developers who know gRPC and would like to get started with ttrpc. Knowledge of gRPC isn&rsquo;t required, however knowledge of golang and tcp is needed. I will felish out more of this tutorial for newbies to the rpc space soon.</p>
-
+      <p>I believe ttrpc stands for teeny tiny rpc. Don't quote me on it. Created for low latency environments based off of the famous <a href="https://grpc.io/">gRPC</a>. I was introduced by ttrpc in a talk given by a <a href="https://github.com/containerd">containerD</a> maintainer. Unexpected for you to know how containerD functions to get started with ttrpc.</p>
+<p>This guide is aimed for developers who know gRPC and would like to get started with ttrpc. Knowledge of gRPC isn't required, however knowledge of golang and tcp is needed. I will felish out more of this tutorial for newbies to the rpc space soon.</p>
 <p>Important to note. ttrpc does sacrifice security features to reduce latency. I would not recommend opening up a ttrpc service to the world or external facing clients. I think it’s perfect for <a href="https://whatis.techtarget.com/definition/air-gapping">air gapped environments</a> or already trusted inter service communication like a cache that runs in/with your service.</p>
-
 <h2 id="requirements">Requirements</h2>
-
 <ul>
 <li><a href="https://golang.org/">Golang</a> gRPC requires 1.6 or higher</li>
 <li><a href="https://developers.google.com/protocol-buffers/">Protoc</a></li>
 </ul>
-
 <p>Make sure you have gRPC installed</p>
-
-<pre><code class="language-shell">$ go get -u google.golang.org/grpc
-</code></pre>
-
-<p>Also the protoc plugin for Go</p>
-
-<pre><code class="language-shell">$ go get -u github.com/golang/protobuf/protoc-gen-go
-</code></pre>
-
-<p><a href="https://grpc.io/docs/quickstart/go/">A thought out guide</a></p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ go get -u google.golang.org/grpc
+</code></pre></div><p>Also the protoc plugin for Go</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ go get -u github.com/golang/protobuf/protoc-gen-go
+</code></pre></div><p><a href="https://grpc.io/docs/quickstart/go/">A thought out guide</a></p>
 <p>Next you will need to install ttrpc plugin for protoc</p>
-
-<pre><code class="language-shell">$ go get github.com/containerd/ttrpc
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ go get github.com/containerd/ttrpc
 $ cd $GOPATH/src/github.com/containerd/ttrpc/cmd/protoc-gen-gogottrpc/ 
 $ go install
 // verify the binary is $GOBIN
 $ ls $GOBIN
-// you should see 'protoc-gen-gogottrpc' in stdout
-</code></pre>
-
-<p>Next create a package in your Go workspace</p>
-
-<pre><code class="language-shell">$ mkdir $GOPATH/src/ttrpc-demo
+// you should see <span style="color:#e6db74">&#39;protoc-gen-gogottrpc&#39;</span> in stdout
+</code></pre></div><p>Next create a package in your Go workspace</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ mkdir $GOPATH/src/ttrpc-demo
 $ cd $GOPATH/src/ttrpc-demo
-</code></pre>
-
-<p>We&rsquo;ll create a folder titled &lsquo;pb&rsquo; to write our proto files in</p>
-
-<pre><code class="language-shell">$ mkdir pb
+</code></pre></div><p>We'll create a folder titled &lsquo;pb&rsquo; to write our proto files in</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ mkdir pb
 $ cd pb
-</code></pre>
-
-<p>Create a file titled hello.proto
+</code></pre></div><p>Create a file titled hello.proto
 in the contents fo the file put</p>
-
-<pre><code class="language-proto">syntax = &quot;proto3&quot;;
-
-option go_package = &quot;hello;hello&quot;;
-
-service HelloService{
-    rpc HelloWorld(HelloRequest) returns (HelloResponse);
-}
-
-message HelloRequest{
-    string msg = 1;
-}
-
-message HelloResponse{
-    string response = 1;
-}
-
-</code></pre>
-
-<p>Now we need to generate our code using the ttrpc plugin we installed earlier. This will create a new directory titled hello with generated code for your service.</p>
-
-<pre><code class="language-shell">$ protoc -I ../pb/ --gogottrpc_out=plugins=ttrpc:../pb ../pb/*.proto
-</code></pre>
-
-<p>Lets write some server side code. Create a new directory titled server/ttrpc/ and a file titled server.go</p>
-
-<pre><code class="language-shell">$ mkdir -p $GOPATH/src/ttrpc-demo/server/ttrpc
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-proto" data-lang="proto">syntax <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;proto3&#34;</span>;<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">option</span> go_package <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello;hello&#34;</span>;<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">service</span> HelloService{<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#66d9ef">rpc</span> HelloWorld(HelloRequest) <span style="color:#66d9ef">returns</span> (HelloResponse);<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>}<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">message</span> <span style="color:#a6e22e">HelloRequest</span>{<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#66d9ef">string</span> msg <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>}<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">message</span> <span style="color:#a6e22e">HelloResponse</span>{<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#66d9ef">string</span> response <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>}<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>Now we need to generate our code using the ttrpc plugin we installed earlier. This will create a new directory titled hello with generated code for your service.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ protoc -I ../pb/ --gogottrpc_out<span style="color:#f92672">=</span>plugins<span style="color:#f92672">=</span>ttrpc:../pb ../pb/*.proto
+</code></pre></div><p>Lets write some server side code. Create a new directory titled server/ttrpc/ and a file titled server.go</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ mkdir -p $GOPATH/src/ttrpc-demo/server/ttrpc
 $ touch $GOPATH/src/ttrpc-demo/server/ttrpc/server.go
-</code></pre>
+</code></pre></div><p>In the server.go file, lets write our service calls</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
-<p>In the server.go file, lets write our service calls</p>
+<span style="color:#f92672">import</span> (
+	<span style="color:#e6db74">&#34;context&#34;</span>
+	<span style="color:#e6db74">&#34;errors&#34;</span>
+	<span style="color:#e6db74">&#34;fmt&#34;</span>
+	<span style="color:#e6db74">&#34;net&#34;</span>
+	<span style="color:#e6db74">&#34;os&#34;</span>
+	<span style="color:#e6db74">&#34;ttrpc-demo/pb/hello&#34;</span>
 
-<pre><code class="language-go">package main
-
-import (
-	&quot;context&quot;
-	&quot;errors&quot;
-	&quot;fmt&quot;
-	&quot;net&quot;
-	&quot;os&quot;
-	&quot;ttrpc-demo/pb/hello&quot;
-
-	&quot;github.com/containerd/ttrpc&quot;
+	<span style="color:#e6db74">&#34;github.com/containerd/ttrpc&#34;</span>
 )
 
-const port = &quot;:9000&quot;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">port</span> = <span style="color:#e6db74">&#34;:9000&#34;</span>
 
-func main() {
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
 
-	s, err := ttrpc.NewServer()
-	defer s.Close()
-	if err != nil {
-		fmt.Fprintln(os.Stderr, err)
-		os.Exit(1)
+	<span style="color:#a6e22e">s</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">ttrpc</span>.<span style="color:#a6e22e">NewServer</span>()
+	<span style="color:#66d9ef">defer</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">Close</span>()
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Fprintln</span>(<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Stderr</span>, <span style="color:#a6e22e">err</span>)
+		<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Exit</span>(<span style="color:#ae81ff">1</span>)
 	}
-	lis, err := net.Listen(&quot;tcp&quot;, port)
-	if err != nil {
-		fmt.Fprintln(os.Stderr, err)
-		os.Exit(1)
+	<span style="color:#a6e22e">lis</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">net</span>.<span style="color:#a6e22e">Listen</span>(<span style="color:#e6db74">&#34;tcp&#34;</span>, <span style="color:#a6e22e">port</span>)
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Fprintln</span>(<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Stderr</span>, <span style="color:#a6e22e">err</span>)
+		<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Exit</span>(<span style="color:#ae81ff">1</span>)
 	}
-	hello.RegisterHelloServiceService(s, &amp;helloService{})
-	if err := s.Serve(context.Background(), lis); err != nil {
-		fmt.Fprintln(os.Stderr, err)
+	<span style="color:#a6e22e">hello</span>.<span style="color:#a6e22e">RegisterHelloServiceService</span>(<span style="color:#a6e22e">s</span>, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">helloService</span>{})
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">Serve</span>(<span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">Background</span>(), <span style="color:#a6e22e">lis</span>); <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Fprintln</span>(<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Stderr</span>, <span style="color:#a6e22e">err</span>)
 	}
 }
 
-type helloService struct{}
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">helloService</span> <span style="color:#66d9ef">struct</span>{}
 
-func (s helloService) HelloWorld(ctx context.Context, r *hello.HelloRequest) (*hello.HelloResponse, error) {
-	if r.Msg == &quot;&quot; {
-		return nil, errors.New(&quot;ErrNoInputMsgGiven&quot;)
+<span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">s</span> <span style="color:#a6e22e">helloService</span>) <span style="color:#a6e22e">HelloWorld</span>(<span style="color:#a6e22e">ctx</span> <span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">Context</span>, <span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">hello</span>.<span style="color:#a6e22e">HelloRequest</span>) (<span style="color:#f92672">*</span><span style="color:#a6e22e">hello</span>.<span style="color:#a6e22e">HelloResponse</span>, <span style="color:#66d9ef">error</span>) {
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">r</span>.<span style="color:#a6e22e">Msg</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;&#34;</span> {
+		<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">nil</span>, <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">New</span>(<span style="color:#e6db74">&#34;ErrNoInputMsgGiven&#34;</span>)
 	}
-	return &amp;hello.HelloResponse{Response: &quot;Hi How are you&quot;}, nil
+	<span style="color:#66d9ef">return</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">hello</span>.<span style="color:#a6e22e">HelloResponse</span>{<span style="color:#a6e22e">Response</span>: <span style="color:#e6db74">&#34;Hi How are you&#34;</span>}, <span style="color:#66d9ef">nil</span>
 }
-</code></pre>
-
-<p>Now lets generate our client side code. Let&rsquo;s create a new directory and a client.go file</p>
-
-<pre><code class="language-shell">$ mkdir -p $GOPATH/src/ttrpc-demo/client/ttrpc/
+</code></pre></div><p>Now lets generate our client side code. Let's create a new directory and a client.go file</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ mkdir -p $GOPATH/src/ttrpc-demo/client/ttrpc/
 $ touch $GOPATH/src/ttrpc-demo/client/ttrpc/client.go
-</code></pre>
+</code></pre></div><p>Inside client.go &ndash; place contents below</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
-<p>Inside client.go &ndash; place contents below</p>
+<span style="color:#f92672">import</span> (
+	<span style="color:#e6db74">&#34;context&#34;</span>
+	<span style="color:#e6db74">&#34;fmt&#34;</span>
+	<span style="color:#e6db74">&#34;net&#34;</span>
+	<span style="color:#e6db74">&#34;os&#34;</span>
+	<span style="color:#e6db74">&#34;ttrpc-demo/pb/hello&#34;</span>
 
-<pre><code class="language-go">package main
-
-import (
-	&quot;context&quot;
-	&quot;fmt&quot;
-	&quot;net&quot;
-	&quot;os&quot;
-	&quot;ttrpc-demo/pb/hello&quot;
-
-	&quot;github.com/containerd/ttrpc&quot;
+	<span style="color:#e6db74">&#34;github.com/containerd/ttrpc&#34;</span>
 )
 
-const port = &quot;:9001&quot;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">port</span> = <span style="color:#e6db74">&#34;:9001&#34;</span>
 
-func main() {
-	conn, err := net.Dial(&quot;tcp&quot;, port)
-	if err != nil {
-		fmt.Fprintf(os.Stderr, &quot;Failed to dial: %v \n&quot;, err)
-		os.Exit(1)
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#a6e22e">conn</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">net</span>.<span style="color:#a6e22e">Dial</span>(<span style="color:#e6db74">&#34;tcp&#34;</span>, <span style="color:#a6e22e">port</span>)
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Fprintf</span>(<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Stderr</span>, <span style="color:#e6db74">&#34;Failed to dial: %v \n&#34;</span>, <span style="color:#a6e22e">err</span>)
+		<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Exit</span>(<span style="color:#ae81ff">1</span>)
 	}
-	client := hello.NewHelloServiceClient(ttrpc.NewClient(conn))
-	serverResponse, err := client.HelloWorld(context.Background(), &amp;hello.HelloRequest{
-		Msg: &quot;Hello Server&quot;,
+	<span style="color:#a6e22e">client</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">hello</span>.<span style="color:#a6e22e">NewHelloServiceClient</span>(<span style="color:#a6e22e">ttrpc</span>.<span style="color:#a6e22e">NewClient</span>(<span style="color:#a6e22e">conn</span>))
+	<span style="color:#a6e22e">serverResponse</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">HelloWorld</span>(<span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">Background</span>(), <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">hello</span>.<span style="color:#a6e22e">HelloRequest</span>{
+		<span style="color:#a6e22e">Msg</span>: <span style="color:#e6db74">&#34;Hello Server&#34;</span>,
 	})
-	if err != nil {
-		fmt.Fprintln(os.Stderr, err)
-		os.Exit(1)
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Fprintln</span>(<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Stderr</span>, <span style="color:#a6e22e">err</span>)
+		<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Exit</span>(<span style="color:#ae81ff">1</span>)
 	}
-	fmt.Fprintln(os.Stdout, serverResponse.Response)
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Fprintln</span>(<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Stdout</span>, <span style="color:#a6e22e">serverResponse</span>.<span style="color:#a6e22e">Response</span>)
 }
-</code></pre>
-
+</code></pre></div>
     </div>
     
       <div class="pagination">
@@ -308,9 +268,9 @@ func main() {
         <div class="pagination__buttons">
           
             <span class="button previous">
-              <a href="https://alleeclark.github.io/post/previous-talks/">
+              <a href="https://alleeclark.github.io/post/antipatterns-in-sre/">
                 <span class="button__icon">←</span>
-                <span class="button__text">Previous talks</span>
+                <span class="button__text">One SRE’s Struggle and Success to Improve Infrastructure as Code</span>
               </a>
             </span>
           

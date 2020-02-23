@@ -6,8 +6,8 @@
     
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content="This post is a small example of how to use Hashicorp&amp;rsquo;s go-getter. This package allows you to pull files easily from GCS, GIT or S3. I&amp;rsquo;ll explain a bit about my use case below. I assume you know about Hashicorp and golang and looking for a clean example to get started.
-For the past few weeks, I&amp;rsquo;ve written designs for a delivery system using Hashi(Hashicorp) tools such as Consul for keys and service discovery, Vault for dynamic secrets, and Terraform to create and modify infrastructure resources."/>
+<meta name="description" content="This post is a small example of how to use Hashicorp&#39;s go-getter. This package allows you to pull files easily from GCS, GIT or S3. I&#39;ll explain a bit about my use case below. I assume you know about Hashicorp and golang and looking for a clean example to get started.
+For the past few weeks, I&#39;ve written designs for a delivery system using Hashi(Hashicorp) tools such as Consul for keys and service discovery, Vault for dynamic secrets, and Terraform to create and modify infrastructure resources."/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
 <link rel="canonical" href="https://alleeclark.github.io/post/getting-started-with-go-getter/" />
@@ -25,14 +25,14 @@ For the past few weeks, I&amp;rsquo;ve written designs for a delivery system usi
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Getting started with go getter"/>
-<meta name="twitter:description" content="This post is a small example of how to use Hashicorp&rsquo;s go-getter. This package allows you to pull files easily from GCS, GIT or S3. I&rsquo;ll explain a bit about my use case below. I assume you know about Hashicorp and golang and looking for a clean example to get started.
-For the past few weeks, I&rsquo;ve written designs for a delivery system using Hashi(Hashicorp) tools such as Consul for keys and service discovery, Vault for dynamic secrets, and Terraform to create and modify infrastructure resources."/>
+<meta name="twitter:description" content="This post is a small example of how to use Hashicorp&#39;s go-getter. This package allows you to pull files easily from GCS, GIT or S3. I&#39;ll explain a bit about my use case below. I assume you know about Hashicorp and golang and looking for a clean example to get started.
+For the past few weeks, I&#39;ve written designs for a delivery system using Hashi(Hashicorp) tools such as Consul for keys and service discovery, Vault for dynamic secrets, and Terraform to create and modify infrastructure resources."/>
 
 
 
 <meta property="og:title" content="Getting started with go getter" />
-<meta property="og:description" content="This post is a small example of how to use Hashicorp&rsquo;s go-getter. This package allows you to pull files easily from GCS, GIT or S3. I&rsquo;ll explain a bit about my use case below. I assume you know about Hashicorp and golang and looking for a clean example to get started.
-For the past few weeks, I&rsquo;ve written designs for a delivery system using Hashi(Hashicorp) tools such as Consul for keys and service discovery, Vault for dynamic secrets, and Terraform to create and modify infrastructure resources." />
+<meta property="og:description" content="This post is a small example of how to use Hashicorp&#39;s go-getter. This package allows you to pull files easily from GCS, GIT or S3. I&#39;ll explain a bit about my use case below. I assume you know about Hashicorp and golang and looking for a clean example to get started.
+For the past few weeks, I&#39;ve written designs for a delivery system using Hashi(Hashicorp) tools such as Consul for keys and service discovery, Vault for dynamic secrets, and Terraform to create and modify infrastructure resources." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://alleeclark.github.io/post/getting-started-with-go-getter/" />
 <meta property="article:published_time" content="2019-11-13T00:00:00+00:00" />
@@ -131,47 +131,44 @@ For the past few weeks, I&rsquo;ve written designs for a delivery system using H
     
 
     <div class="post-content">
-      <p>This post is a small example of how to use Hashicorp&rsquo;s <a href="https://github.com/hashicorp/go-getter">go-getter</a>. This package allows you to pull files easily from GCS, GIT or S3. I&rsquo;ll explain a bit about my use case below. I assume you know about Hashicorp and golang and looking for a clean example to get started.</p>
+      <p>This post is a small example of how to use Hashicorp's <a href="https://github.com/hashicorp/go-getter">go-getter</a>. This package allows you to pull files easily from GCS, GIT or S3. I'll explain a bit about my use case below. I assume you know about Hashicorp and golang and looking for a clean example to get started.</p>
+<p>For the past few weeks, I've written designs for a delivery system using Hashi(Hashicorp) tools such as <a href="https://www.consul.io">Consul</a> for keys and service discovery, <a href="https://www.vaultproject.io">Vault</a> for dynamic secrets, and <a href="https://www.terraform.io">Terraform</a> to create and modify infrastructure resources. I'm determining where I should store Terraform files and directories. I'm experimenting allowing clients to commit Terraform folders to a repository such as git or s3. Committing a Terraform directory creates a new infrastructure request to eventually get to the <code>terraform apply</code> phase. This may also provide a testing path to test out new terraform modules, upgrades, etc. The create request will clone the folder to a remote server and run <code>terraform init</code>, <code>terraform plan</code>, <code>terraform apply</code>. Below is an example of using the &ldquo;GitGetter&rdquo; for retrieving a subdirectory of a git repository using go-getter. This package is also an easier interface to git commands instead of dealing with the c binding for the git2go package. I haven't read through all the code, however I believe go-getter clones the entire respoitory in memory and then returns you the directories you specify. In Part two I will add an example of invoking Terraform directly using it's packages.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
-<p>For the past few weeks, I&rsquo;ve written designs for a delivery system using Hashi(Hashicorp) tools such as <a href="https://www.consul.io">Consul</a> for keys and service discovery, <a href="https://www.vaultproject.io">Vault</a> for dynamic secrets, and <a href="https://www.terraform.io">Terraform</a> to create and modify infrastructure resources. I&rsquo;m determining where I should store Terraform files and directories. I&rsquo;m experimenting allowing clients to commit Terraform folders to a repository such as git or s3. Committing a Terraform directory creates a new infrastructure request to eventually get to the <code>terraform apply</code> phase. This may also provide a testing path to test out new terraform modules, upgrades, etc. The create request will clone the folder to a remote server and run <code>terraform init</code>, <code>terraform plan</code>, <code>terraform apply</code>. Below is an example of using the &ldquo;GitGetter&rdquo; for retrieving a subdirectory of a git repository using go-getter. This package is also an easier interface to git commands instead of dealing with the c binding for the git2go package. In Part two I will add an example of invoking Terraform directly using it&rsquo;s packages.</p>
+<span style="color:#f92672">import</span> (
+	<span style="color:#e6db74">&#34;context&#34;</span>
+	<span style="color:#e6db74">&#34;fmt&#34;</span>
+	<span style="color:#e6db74">&#34;os&#34;</span>
 
-<pre><code class="language-go">package main
-
-import (
-	&quot;context&quot;
-	&quot;fmt&quot;
-	&quot;os&quot;
-
-	getter &quot;github.com/hashicorp/go-getter&quot;
+	<span style="color:#a6e22e">getter</span> <span style="color:#e6db74">&#34;github.com/hashicorp/go-getter&#34;</span>
 )
 
-func main() {
-	client := &amp;getter.Client{
-		Ctx: context.Background(),
-		//define the destination to where the directory will be stored. This will create the directory if it doesnt exist
-		Dst: &quot;/tmp/gogetter&quot;,
-		Dir: true,
-		//the repository with a subdirectory I would like to clone only
-		Src:  &quot;github.com/hashicorp/terraform/examples/cross-provider&quot;,
-		Mode: getter.ClientModeDir,
-		//define the type of detectors go getter should use, in this case only github is needed
-		Detectors: []getter.Detector{
-			new(getter.GitHubDetector),
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#a6e22e">client</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">getter</span>.<span style="color:#a6e22e">Client</span>{
+		<span style="color:#a6e22e">Ctx</span>: <span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">Background</span>(),
+		<span style="color:#75715e">//define the destination to where the directory will be stored. This will create the directory if it doesnt exist
+</span><span style="color:#75715e"></span>		<span style="color:#a6e22e">Dst</span>: <span style="color:#e6db74">&#34;/tmp/gogetter&#34;</span>,
+		<span style="color:#a6e22e">Dir</span>: <span style="color:#66d9ef">true</span>,
+		<span style="color:#75715e">//the repository with a subdirectory I would like to clone only
+</span><span style="color:#75715e"></span>		<span style="color:#a6e22e">Src</span>:  <span style="color:#e6db74">&#34;github.com/hashicorp/terraform/examples/cross-provider&#34;</span>,
+		<span style="color:#a6e22e">Mode</span>: <span style="color:#a6e22e">getter</span>.<span style="color:#a6e22e">ClientModeDir</span>,
+		<span style="color:#75715e">//define the type of detectors go getter should use, in this case only github is needed
+</span><span style="color:#75715e"></span>		<span style="color:#a6e22e">Detectors</span>: []<span style="color:#a6e22e">getter</span>.<span style="color:#a6e22e">Detector</span>{
+			<span style="color:#f92672">&amp;</span><span style="color:#a6e22e">getter</span>.<span style="color:#a6e22e">GitHubDetector</span>{},
 		},
-		//provide the getter needed to download the files
-		Getters: map[string]getter.Getter{
-			&quot;git&quot;: &amp;getter.GitGetter{},
+		<span style="color:#75715e">//provide the getter needed to download the files
+</span><span style="color:#75715e"></span>		<span style="color:#a6e22e">Getters</span>: <span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#a6e22e">getter</span>.<span style="color:#a6e22e">Getter</span>{
+			<span style="color:#e6db74">&#34;git&#34;</span>: <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">getter</span>.<span style="color:#a6e22e">GitGetter</span>{},
 		},
 	}
-	//download the files
-	if err := client.Get(); err != nil {
-		fmt.Fprintf(os.Stderr, &quot;Error getting path %s: %v&quot;, client.Src, err)
-		os.Exit(1)
+	<span style="color:#75715e">//download the files
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">Get</span>(); <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Fprintf</span>(<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Stderr</span>, <span style="color:#e6db74">&#34;Error getting path %s: %v&#34;</span>, <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">Src</span>, <span style="color:#a6e22e">err</span>)
+		<span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Exit</span>(<span style="color:#ae81ff">1</span>)
 	}
-	//now you should check your temp directory for the files to see if they exist
-}
-</code></pre>
-
+	<span style="color:#75715e">//now you should check your temp directory for the files to see if they exist
+</span><span style="color:#75715e"></span>}
+</code></pre></div>
     </div>
     
       <div class="pagination">
@@ -180,6 +177,13 @@ func main() {
           <hr />
         </div>
         <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="https://alleeclark.github.io/post/previous-talks/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Previous talks</span>
+              </a>
+            </span>
           
           
             <span class="button next">

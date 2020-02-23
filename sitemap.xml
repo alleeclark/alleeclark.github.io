@@ -1,11 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://alleeclark.github.io/</loc>
-    <lastmod>2019-11-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/post/</loc>
+    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/post/previous-talks/</loc>
+    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -14,19 +23,8 @@
   </url>
   
   <url>
-    <loc>https://alleeclark.github.io/post/</loc>
-    <lastmod>2019-11-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://alleeclark.github.io/post/antipatterns-in-sre/</loc>
     <lastmod>2019-09-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alleeclark.github.io/post/previous-talks/</loc>
-    <lastmod>2019-09-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -65,12 +63,10 @@
   
   <url>
     <loc>https://alleeclark.github.io/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://alleeclark.github.io/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
