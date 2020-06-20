@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>editor on Allee Clark</title>
+    <link>https://alleeclark.github.io/en/tags/editor/</link>
+    <description>Recent content in editor on Allee Clark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>alleeclark@gmail.com (allee)</managingEditor>
+    <webMaster>alleeclark@gmail.com (allee)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 17 May 2019 12:00:06 +0900</lastBuildDate>
+    
+        <atom:link href="https://alleeclark.github.io/en/tags/editor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>VSCode Productivity Tips &amp; Tricks</title>
+        <link>https://alleeclark.github.io/en/posts/vscode-tips-and-tricks/</link>
+        <pubDate>Fri, 17 May 2019 12:00:06 +0900</pubDate>
+        <author>alleeclark@gmail.com (allee)</author>
+        <atom:modified>Fri, 17 May 2019 12:00:06 +0900</atom:modified>
+        <guid>https://alleeclark.github.io/en/posts/vscode-tips-and-tricks/</guid>
+        <description>More than likely I am a Microsoft developer tool advocate. My first language was c++ using Visual Studio. Haven’t stopped sipping the kool aid since. Even though my primary language is golang today.
+Bookmarks Same principle as your web browser. Keep track of places in the code that you know you will need to come back to.
+Pros:
+ Label bookmarks Side view for all bookmarks per file Search bookmarks Cons: Unable to add multiple lines per a bookmark.</description>
+        
+        <dc:creator>Allee Clark</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>time management</category>
+            
+          
+            
+              <category>coding</category>
+            
+          
+            
+              <category>vscode</category>
+            
+          
+            
+              <category>editor</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

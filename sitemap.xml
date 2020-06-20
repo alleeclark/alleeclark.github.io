@@ -1,72 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://alleeclark.github.io/</loc>
-    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alleeclark.github.io/post/</loc>
-    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alleeclark.github.io/post/previous-talks/</loc>
-    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alleeclark.github.io/post/getting-started-with-go-getter/</loc>
-    <lastmod>2019-11-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alleeclark.github.io/post/antipatterns-in-sre/</loc>
-    <lastmod>2019-09-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alleeclark.github.io/post/getting-started-with-ttrpc/</loc>
-    <lastmod>2019-08-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alleeclark.github.io/post/vscode-tips-tricks-1/</loc>
-    <lastmod>2019-05-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alleeclark.github.io/post/daily-sre-routine/</loc>
-    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alleeclark.github.io/post/incident-decisions/</loc>
-    <lastmod>2019-03-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alleeclark.github.io/about/</loc>
-    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alleeclark.github.io/post/new-stack-post/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://alleeclark.github.io/archive/</loc>
-  </url>
-  
-  <url>
-    <loc>https://alleeclark.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://alleeclark.github.io/tags/</loc>
-  </url>
-  
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+	<sitemap>
+	   	<loc>https://alleeclark.github.io/en/sitemap.xml</loc>
+		
+	   	<lastmod>2020-06-16T12:00:06+09:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://alleeclark.github.io/ko/sitemap.xml</loc>
+		
+	</sitemap>
+	
+</sitemapindex>

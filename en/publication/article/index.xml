@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>article on Allee Clark</title>
+    <link>https://alleeclark.github.io/en/publication/article/</link>
+    <description>Recent content in article on Allee Clark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>alleeclark@gmail.com (allee)</managingEditor>
+    <webMaster>alleeclark@gmail.com (allee)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 05 Mar 2020 14:08:48 +0000</lastBuildDate>
+    
+        <atom:link href="https://alleeclark.github.io/en/publication/article/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>One&#39;s SRE&#39;s Struggle and Success to Improve Infrastructure as Code</title>
+        <link>https://alleeclark.github.io/en/publication/article/article_any_folder_name_1/</link>
+        <pubDate>Mon, 30 Sep 2019 00:00:00 +0000</pubDate>
+        <author>alleeclark@gmail.com (allee)</author>
+        <atom:modified>Mon, 30 Sep 2019 00:00:00 +0000</atom:modified>
+        <guid>https://alleeclark.github.io/en/publication/article/article_any_folder_name_1/</guid>
+        <description></description>
+        
+        <dc:creator>allee</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

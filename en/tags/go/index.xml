@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>go on Allee Clark</title>
+    <link>https://alleeclark.github.io/en/tags/go/</link>
+    <description>Recent content in go on Allee Clark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>alleeclark@gmail.com (allee)</managingEditor>
+    <webMaster>alleeclark@gmail.com (allee)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 16 Jun 2020 12:00:06 +0900</lastBuildDate>
+    
+        <atom:link href="https://alleeclark.github.io/en/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Getting Started With Go Getter</title>
+        <link>https://alleeclark.github.io/en/posts/getting-started-with-go-getter/</link>
+        <pubDate>Tue, 16 Jun 2020 12:00:06 +0900</pubDate>
+        <author>alleeclark@gmail.com (allee)</author>
+        <atom:modified>Tue, 16 Jun 2020 12:00:06 +0900</atom:modified>
+        <guid>https://alleeclark.github.io/en/posts/getting-started-with-go-getter/</guid>
+        <description>Getting started with go getter
+This post is a small example of how to use Hashicorp&amp;rsquo;s go-getter. This package allows you to pull files easily from GCS, GIT or S3. I&amp;rsquo;ll explain a bit about my use case below. I assume you know about Hashicorp and golang and looking for a clean example to get started. For the past few weeks, I&amp;rsquo;ve written designs for a delivery system using Hashi(Hashicorp) tools such as Consul for keys and service discovery, Vault for dynamic secrets, and Terraform to create and modify infrastructure resources.</description>
+        
+        <dc:creator>Allee Clark</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>go</category>
+            
+          
+            
+              <category>hashicorp</category>
+            
+          
+            
+              <category>open source</category>
+            
+          
+            
+              <category>cloud</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Getting Started With ttrpc</title>
+        <link>https://alleeclark.github.io/en/posts/getting-started-with-ttrpc/</link>
+        <pubDate>Sun, 25 Aug 2019 12:00:06 +0900</pubDate>
+        <author>alleeclark@gmail.com (allee)</author>
+        <atom:modified>Sun, 25 Aug 2019 12:00:06 +0900</atom:modified>
+        <guid>https://alleeclark.github.io/en/posts/getting-started-with-ttrpc/</guid>
+        <description>Getting started with ttrpc
+I believe ttrpc stands for teeny tiny rpc. Don&amp;rsquo;t quote me on it. Created for low latency environments based off of the famous gRPC. I was introduced by ttrpc in a talk given by a containerD maintainer. Unexpected for you to know how containerD functions to get started with ttrpc. This guide is aimed for developers who know gRPC and would like to get started with ttrpc.</description>
+        
+        <dc:creator>Allee Clark</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>go</category>
+            
+          
+            
+              <category>rpc</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/showcase/hugo/hugo-theme-zzo/</loc>
+    <lastmod>2020-01-19T21:13:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/showcase/hugo/hugo-theme-zdoc/</loc>
+    <lastmod>2020-01-19T21:13:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/</loc>
+    <lastmod>2020-06-16T12:00:06+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://alleeclark.github.io/ko/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://alleeclark.github.io/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/tags/cloud/</loc>
+    <lastmod>2020-06-16T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/posts/getting-started-with-go-getter/</loc>
+    <lastmod>2020-06-16T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/tags/go/</loc>
+    <lastmod>2020-06-16T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/tags/hashicorp/</loc>
+    <lastmod>2020-06-16T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/tags/open-source/</loc>
+    <lastmod>2020-06-16T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/posts/</loc>
+    <lastmod>2020-06-16T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/tags/</loc>
+    <lastmod>2020-06-16T12:00:06+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://alleeclark.github.io/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://alleeclark.github.io/en/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/publication/article/</loc>
+    <lastmod>2020-03-05T14:08:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/publication/</loc>
+    <lastmod>2020-03-05T14:08:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/showcase/hugo/</loc>
+    <lastmod>2020-01-19T21:04:11+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/showcase/</loc>
+    <lastmod>2020-01-19T15:43:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/tags/configuration-management/</loc>
+    <lastmod>2019-10-30T19:45:20+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/tags/consul/</loc>
+    <lastmod>2019-10-30T19:45:20+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/presentation/</loc>
+    <lastmod>2019-10-30T19:45:20+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/tags/terraform/</loc>
+    <lastmod>2019-10-30T19:45:20+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/presentation/first/</loc>
+    <lastmod>2019-10-30T19:45:20+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/archive/</loc>
+    <lastmod>2019-10-19T11:44:14+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/publication/article/article_any_folder_name_1/</loc>
+    <lastmod>2019-09-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/posts/getting-started-with-ttrpc/</loc>
+    <lastmod>2019-08-25T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/tags/rpc/</loc>
+    <lastmod>2019-08-25T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/tags/coding/</loc>
+    <lastmod>2019-05-17T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/tags/editor/</loc>
+    <lastmod>2019-05-17T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/tags/time-management/</loc>
+    <lastmod>2019-05-17T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/tags/vscode/</loc>
+    <lastmod>2019-05-17T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/posts/vscode-tips-and-tricks/</loc>
+    <lastmod>2019-05-17T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/posts/daily-sre-routine/</loc>
+    <lastmod>2019-05-03T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/tags/sre/</loc>
+    <lastmod>2019-03-28T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/posts/incident-decisions/</loc>
+    <lastmod>2019-03-28T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/about/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://alleeclark.github.io/ko/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://alleeclark.github.io/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/tags/index/</loc>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://alleeclark.github.io/ko/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://alleeclark.github.io/en/series/"
+                />
+  </url>
+  
+</urlset>
