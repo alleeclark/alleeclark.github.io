@@ -1634,7 +1634,7 @@
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
       <p>I want to identify three methods in the industry under planning for capacity in the cloud.</p>
-<p>SRE principals include capacity planning in order to ensure production readiness for a release possibly using the current performance as a baseline. Many [books](link to art of capacity planning) go in depth about why you should deal with capacity, performance with tools and ways for your cloud infrastructure.</p>
+<p>SRE principals include capacity planning in order to ensure production readiness for a release possibly using the current performance as a baseline. Many <a href="https://dl.acm.org/doi/book/10.5555/1457542">books</a> go in depth about why you should deal with capacity, performance with tools and ways for your cloud infrastructure.</p>
 <p>The first method is using monitoring tools to help guide your capacity plan when you understand the system’s needs. Here is a resource on the current landscape of observability. I’m not saying monitoring is observability, but here are some observability focused tools that help you achieve monitoring for everyone. We also get monitoring out of the box when we use cloud resources from a provider such as <a href="https://aws.amazon.com/cloudwatch/">Amazon’s web services such as cloudwatch</a>.</p>
 <p>The second method typically known is benchmark testing with tools such as <a href="https://github.com/GoogleCloudPlatform/PerfKitBenchmarker">perfkitbenchmarker</a>.</p>
 <p>Branden Greg’s system performance books discuss different methods for benchmarking in detail.</p>
@@ -1651,7 +1651,7 @@ Benchmark testing may not be practical for distributed systems in the cloud when
 <li>Rate quota such as API requests per day. This quota resets after a specified time, such as a minute or a day.</li>
 </ol>
 </blockquote>
-<p>This may be possible for your inhouse built application if you design it well. If it is too complex to add it or the application you are servicing doesn&rsquo;t support it, then consider an open source proxy such as <a href="https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/upstream/circuit_breaking#arch-overview-circuit-break">envoy</a> which has circuit breaking(<a href="https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/upstream/circuit_breaking#arch-overview-circuit-break">https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/upstream/circuit_breaking#arch-overview-circuit-break</a>) or <a href="https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/other_features/global_rate_limiting">rate limiting</a> built in.</p>
+<p>This may be possible for your inhouse built application if you design it well. If it is too complex to add it or the application you are servicing doesn&rsquo;t support it, then consider an open source proxy such as <a href="https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/upstream/circuit_breaking#arch-overview-circuit-break">envoy</a> which has <a href="https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/upstream/circuit_breaking#arch-overview-circuit-break">circuit breaking</a> or <a href="https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/other_features/global_rate_limiting">rate limiting</a> built in.</p>
 <blockquote>
 <ol start="2">
 <li>Allocation quota such as the number of virtual machines or load balancers used by your project. This quota does not reset over time but must be explicitly released when you no longer want to use the resource, for example by deleting a GKE cluster.</li>
@@ -1660,6 +1660,7 @@ Benchmark testing may not be practical for distributed systems in the cloud when
 <p>The ease and affordability of the allocation solution is attractive. Let&rsquo;s say we have an application that stores data in memory, and periodically flushes memory to disk for recovery, and provides users to perform reads on the data in memory.</p>
 <p>A thought for using the monitoring method to monitor the size in memory of the machine. Allocate enough for realtime, the snapshot process and room for expensive queries. We want to  ensure clear objectives if memory never goes over 70% during peak hours.</p>
 <p>WIth or without monitoring in place setting quotas will allow you to move from unplanned routine work of increasing storage for a database at the last possible minute to avoid downtime. Say a particular application is using 40% of your resources and they are instantaneously growing usage now you have an opportunity to speak with your teams about expansion plans and if there is an acceptable budget for both parties to work out of.</p>
+<p>These all may be complex ways to design a system internally so you may think about controlling how many users to onboard for a service.</p>
 
     </article>
     

@@ -51,7 +51,7 @@
         <atom:modified>Tue, 16 Jun 2020 12:00:06 +0900</atom:modified>
         <guid>https://alleeclark.github.io/en/posts/capacity-planning-vs-quotas/</guid>
         <description>I want to identify three methods in the industry under planning for capacity in the cloud.
-SRE principals include capacity planning in order to ensure production readiness for a release possibly using the current performance as a baseline. Many [books](link to art of capacity planning) go in depth about why you should deal with capacity, performance with tools and ways for your cloud infrastructure.
+SRE principals include capacity planning in order to ensure production readiness for a release possibly using the current performance as a baseline. Many books go in depth about why you should deal with capacity, performance with tools and ways for your cloud infrastructure.
 The first method is using monitoring tools to help guide your capacity plan when you understand the system’s needs.</description>
         
         <dc:creator>Allee Clark</dc:creator>
