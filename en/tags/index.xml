@@ -23,6 +23,42 @@
 
       
       <item>
+        <title>benchmarking</title>
+        <link>https://alleeclark.github.io/en/tags/benchmarking/</link>
+        <pubDate>Tue, 16 Jun 2020 12:00:06 +0900</pubDate>
+        <author>alleeclark@gmail.com (allee)</author>
+        
+        <guid>https://alleeclark.github.io/en/tags/benchmarking/</guid>
+        <description></description>
+        
+        <dc:creator>allee</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>capacity planning</title>
+        <link>https://alleeclark.github.io/en/tags/capacity-planning/</link>
+        <pubDate>Tue, 16 Jun 2020 12:00:06 +0900</pubDate>
+        <author>alleeclark@gmail.com (allee)</author>
+        
+        <guid>https://alleeclark.github.io/en/tags/capacity-planning/</guid>
+        <description></description>
+        
+        <dc:creator>allee</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
         <title>cloud</title>
         <link>https://alleeclark.github.io/en/tags/cloud/</link>
         <pubDate>Tue, 16 Jun 2020 12:00:06 +0900</pubDate>
@@ -41,12 +77,12 @@
       </item>
       
       <item>
-        <title>go</title>
-        <link>https://alleeclark.github.io/en/tags/go/</link>
+        <title>delivery</title>
+        <link>https://alleeclark.github.io/en/tags/delivery/</link>
         <pubDate>Tue, 16 Jun 2020 12:00:06 +0900</pubDate>
         <author>alleeclark@gmail.com (allee)</author>
         
-        <guid>https://alleeclark.github.io/en/tags/go/</guid>
+        <guid>https://alleeclark.github.io/en/tags/delivery/</guid>
         <description></description>
         
         <dc:creator>allee</dc:creator>
@@ -59,12 +95,30 @@
       </item>
       
       <item>
-        <title>hashicorp</title>
-        <link>https://alleeclark.github.io/en/tags/hashicorp/</link>
+        <title>monitoring</title>
+        <link>https://alleeclark.github.io/en/tags/monitoring/</link>
         <pubDate>Tue, 16 Jun 2020 12:00:06 +0900</pubDate>
         <author>alleeclark@gmail.com (allee)</author>
         
-        <guid>https://alleeclark.github.io/en/tags/hashicorp/</guid>
+        <guid>https://alleeclark.github.io/en/tags/monitoring/</guid>
+        <description></description>
+        
+        <dc:creator>allee</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>observability</title>
+        <link>https://alleeclark.github.io/en/tags/observability/</link>
+        <pubDate>Tue, 16 Jun 2020 12:00:06 +0900</pubDate>
+        <author>alleeclark@gmail.com (allee)</author>
+        
+        <guid>https://alleeclark.github.io/en/tags/observability/</guid>
         <description></description>
         
         <dc:creator>allee</dc:creator>
@@ -83,6 +137,24 @@
         <author>alleeclark@gmail.com (allee)</author>
         
         <guid>https://alleeclark.github.io/en/tags/open-source/</guid>
+        <description></description>
+        
+        <dc:creator>allee</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>sre</title>
+        <link>https://alleeclark.github.io/en/tags/sre/</link>
+        <pubDate>Tue, 16 Jun 2020 12:00:06 +0900</pubDate>
+        <author>alleeclark@gmail.com (allee)</author>
+        
+        <guid>https://alleeclark.github.io/en/tags/sre/</guid>
         <description></description>
         
         <dc:creator>allee</dc:creator>
@@ -131,12 +203,48 @@
       </item>
       
       <item>
+        <title>hashicorp</title>
+        <link>https://alleeclark.github.io/en/tags/hashicorp/</link>
+        <pubDate>Wed, 30 Oct 2019 19:45:20 +0900</pubDate>
+        <author>alleeclark@gmail.com (allee)</author>
+        
+        <guid>https://alleeclark.github.io/en/tags/hashicorp/</guid>
+        <description></description>
+        
+        <dc:creator>allee</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
         <title>terraform</title>
         <link>https://alleeclark.github.io/en/tags/terraform/</link>
         <pubDate>Wed, 30 Oct 2019 19:45:20 +0900</pubDate>
         <author>alleeclark@gmail.com (allee)</author>
         
         <guid>https://alleeclark.github.io/en/tags/terraform/</guid>
+        <description></description>
+        
+        <dc:creator>allee</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>go</title>
+        <link>https://alleeclark.github.io/en/tags/go/</link>
+        <pubDate>Sun, 25 Aug 2019 12:00:06 +0900</pubDate>
+        <author>alleeclark@gmail.com (allee)</author>
+        
+        <guid>https://alleeclark.github.io/en/tags/go/</guid>
         <description></description>
         
         <dc:creator>allee</dc:creator>
@@ -227,24 +335,6 @@
         <author>alleeclark@gmail.com (allee)</author>
         
         <guid>https://alleeclark.github.io/en/tags/vscode/</guid>
-        <description></description>
-        
-        <dc:creator>allee</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>sre</title>
-        <link>https://alleeclark.github.io/en/tags/sre/</link>
-        <pubDate>Thu, 28 Mar 2019 12:00:06 +0900</pubDate>
-        <author>alleeclark@gmail.com (allee)</author>
-        
-        <guid>https://alleeclark.github.io/en/tags/sre/</guid>
         <description></description>
         
         <dc:creator>allee</dc:creator>

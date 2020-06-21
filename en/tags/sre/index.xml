@@ -14,13 +14,67 @@
     <managingEditor>alleeclark@gmail.com (allee)</managingEditor>
     <webMaster>alleeclark@gmail.com (allee)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 28 Mar 2019 12:00:06 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2020 12:00:06 +0900</lastBuildDate>
     
         <atom:link href="https://alleeclark.github.io/en/tags/sre/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>Capacity Planning in the Cloud</title>
+        <link>https://alleeclark.github.io/en/posts/capacity-planning-vs-quotas/</link>
+        <pubDate>Tue, 16 Jun 2020 12:00:06 +0900</pubDate>
+        <author>alleeclark@gmail.com (allee)</author>
+        <atom:modified>Tue, 16 Jun 2020 12:00:06 +0900</atom:modified>
+        <guid>https://alleeclark.github.io/en/posts/capacity-planning-vs-quotas/</guid>
+        <description>I want to identify three methods in the industry under planning for capacity in the cloud.
+SRE principals include capacity planning in order to ensure production readiness for a release possibly using the current performance as a baseline. Many [books](link to art of capacity planning) go in depth about why you should deal with capacity, performance with tools and ways for your cloud infrastructure.
+The first method is using monitoring tools to help guide your capacity plan when you understand the system’s needs.</description>
+        
+        <dc:creator>Allee Clark</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>sre</category>
+            
+          
+            
+              <category>cloud</category>
+            
+          
+            
+              <category>delivery</category>
+            
+          
+            
+              <category>capacity planning</category>
+            
+          
+            
+              <category>monitoring</category>
+            
+          
+            
+              <category>observability</category>
+            
+          
+            
+              <category>benchmarking</category>
+            
+          
+            
+              <category>open source</category>
+            
+          
+        
+        
+        
+      </item>
       
       <item>
         <title>What decision should I make about an incident?</title>

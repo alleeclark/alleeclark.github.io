@@ -28,22 +28,37 @@
   </url>
   
   <url>
+    <loc>https://alleeclark.github.io/en/tags/benchmarking/</loc>
+    <lastmod>2020-06-16T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/tags/capacity-planning/</loc>
+    <lastmod>2020-06-16T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/posts/capacity-planning-vs-quotas/</loc>
+    <lastmod>2020-06-16T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://alleeclark.github.io/en/tags/cloud/</loc>
     <lastmod>2020-06-16T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://alleeclark.github.io/en/posts/getting-started-with-go-getter/</loc>
+    <loc>https://alleeclark.github.io/en/tags/delivery/</loc>
     <lastmod>2020-06-16T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://alleeclark.github.io/en/tags/go/</loc>
+    <loc>https://alleeclark.github.io/en/tags/monitoring/</loc>
     <lastmod>2020-06-16T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://alleeclark.github.io/en/tags/hashicorp/</loc>
+    <loc>https://alleeclark.github.io/en/tags/observability/</loc>
     <lastmod>2020-06-16T12:00:06+09:00</lastmod>
   </url>
   
@@ -54,6 +69,11 @@
   
   <url>
     <loc>https://alleeclark.github.io/en/posts/</loc>
+    <lastmod>2020-06-16T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/tags/sre/</loc>
     <lastmod>2020-06-16T12:00:06+09:00</lastmod>
   </url>
   
@@ -103,6 +123,11 @@
   </url>
   
   <url>
+    <loc>https://alleeclark.github.io/en/tags/hashicorp/</loc>
+    <lastmod>2019-10-30T19:45:20+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://alleeclark.github.io/en/presentation/</loc>
     <lastmod>2019-10-30T19:45:20+09:00</lastmod>
   </url>
@@ -133,8 +158,18 @@
   </url>
   
   <url>
+    <loc>https://alleeclark.github.io/en/tags/go/</loc>
+    <lastmod>2019-08-25T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://alleeclark.github.io/en/tags/rpc/</loc>
     <lastmod>2019-08-25T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alleeclark.github.io/en/posts/getting-started-with-go-getter/</loc>
+    <lastmod>2019-08-16T12:00:06+09:00</lastmod>
   </url>
   
   <url>
@@ -165,11 +200,6 @@
   <url>
     <loc>https://alleeclark.github.io/en/posts/daily-sre-routine/</loc>
     <lastmod>2019-05-03T12:00:06+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alleeclark.github.io/en/tags/sre/</loc>
-    <lastmod>2019-03-28T12:00:06+09:00</lastmod>
   </url>
   
   <url>

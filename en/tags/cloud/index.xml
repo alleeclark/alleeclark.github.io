@@ -23,14 +23,15 @@
 
       
       <item>
-        <title>Getting Started With Go Getter</title>
-        <link>https://alleeclark.github.io/en/posts/getting-started-with-go-getter/</link>
+        <title>Capacity Planning in the Cloud</title>
+        <link>https://alleeclark.github.io/en/posts/capacity-planning-vs-quotas/</link>
         <pubDate>Tue, 16 Jun 2020 12:00:06 +0900</pubDate>
         <author>alleeclark@gmail.com (allee)</author>
         <atom:modified>Tue, 16 Jun 2020 12:00:06 +0900</atom:modified>
-        <guid>https://alleeclark.github.io/en/posts/getting-started-with-go-getter/</guid>
-        <description>Getting started with go getter
-This post is a small example of how to use Hashicorp&amp;rsquo;s go-getter. This package allows you to pull files easily from GCS, GIT or S3. I&amp;rsquo;ll explain a bit about my use case below. I assume you know about Hashicorp and golang and looking for a clean example to get started. For the past few weeks, I&amp;rsquo;ve written designs for a delivery system using Hashi(Hashicorp) tools such as Consul for keys and service discovery, Vault for dynamic secrets, and Terraform to create and modify infrastructure resources.</description>
+        <guid>https://alleeclark.github.io/en/posts/capacity-planning-vs-quotas/</guid>
+        <description>I want to identify three methods in the industry under planning for capacity in the cloud.
+SRE principals include capacity planning in order to ensure production readiness for a release possibly using the current performance as a baseline. Many [books](link to art of capacity planning) go in depth about why you should deal with capacity, performance with tools and ways for your cloud infrastructure.
+The first method is using monitoring tools to help guide your capacity plan when you understand the system’s needs.</description>
         
         <dc:creator>Allee Clark</dc:creator>
         
@@ -39,19 +40,35 @@ This post is a small example of how to use Hashicorp&amp;rsquo;s go-getter. This
         
           
             
-              <category>go</category>
-            
-          
-            
-              <category>hashicorp</category>
-            
-          
-            
-              <category>open source</category>
+              <category>sre</category>
             
           
             
               <category>cloud</category>
+            
+          
+            
+              <category>delivery</category>
+            
+          
+            
+              <category>capacity planning</category>
+            
+          
+            
+              <category>monitoring</category>
+            
+          
+            
+              <category>observability</category>
+            
+          
+            
+              <category>benchmarking</category>
+            
+          
+            
+              <category>open source</category>
             
           
         
@@ -104,6 +121,43 @@ This post is a small example of how to use Hashicorp&amp;rsquo;s go-getter. This
           
             
           
+        
+      </item>
+      
+      <item>
+        <title>Getting Started With Go Getter</title>
+        <link>https://alleeclark.github.io/en/posts/getting-started-with-go-getter/</link>
+        <pubDate>Fri, 16 Aug 2019 12:00:06 +0900</pubDate>
+        <author>alleeclark@gmail.com (allee)</author>
+        <atom:modified>Fri, 16 Aug 2019 12:00:06 +0900</atom:modified>
+        <guid>https://alleeclark.github.io/en/posts/getting-started-with-go-getter/</guid>
+        <description>Getting started with go getter
+This post is a small example of how to use Hashicorp&amp;rsquo;s go-getter. This package allows you to pull files easily from GCS, GIT or S3. I&amp;rsquo;ll explain a bit about my use case below. I assume you know about Hashicorp and golang and looking for a clean example to get started. For the past few weeks, I&amp;rsquo;ve written designs for a delivery system using Hashi(Hashicorp) tools such as Consul for keys and service discovery, Vault for dynamic secrets, and Terraform to create and modify infrastructure resources.</description>
+        
+        <dc:creator>Allee Clark</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>go</category>
+            
+          
+            
+              <category>hashicorp</category>
+            
+          
+            
+              <category>open source</category>
+            
+          
+            
+              <category>cloud</category>
+            
+          
+        
+        
         
       </item>
       
